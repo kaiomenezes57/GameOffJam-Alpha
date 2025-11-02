@@ -16,5 +16,18 @@ namespace Game.Core.Extensions
             component = GetOrAdd<T>(source);
             return component != null;
         }
+
+        public static T GetComponentAnywhere<T>(this GameObject source) where T : class
+        {
+            if (!source.TryGetComponent<T>(out var component))
+            {
+                source.GetComponentInChildren<T>();
+
+                if (component == null)
+                    source.GetComponentInParent<T>();
+            }
+
+            return component;
+        }
     }
 }
