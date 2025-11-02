@@ -2,12 +2,14 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 using Game.Core.Interaction;
 using Game.Core.Extensions;
+using Game.Core.Utilities.DisablableComponent;
 
 namespace Game.Domains.Player
 {
-    public sealed class PlayerInteractionBrowser : MonoBehaviour
+    public sealed class PlayerInteractionBrowser : BaseDisablableComponent
     {
         [SerializeField] private InputActionReference _interactInput;
+        [SerializeField] private InputActionReference _mousePosition;
         private Camera _camera;
 
         private IInteractable Current
@@ -26,12 +28,16 @@ namespace Game.Domains.Player
         {
             _interactInput.action.Enable();
             _interactInput.action.performed += Interact;
+            
+            _mousePosition.action.Enable();
         }
 
         private void OnDisable()
         {
             _interactInput.action.Disable();
             _interactInput.action.performed -= Interact;
+
+            _mousePosition.action.Disable();
         }
 
         private void Start()
@@ -41,7 +47,12 @@ namespace Game.Domains.Player
 
         private void Update()
         {
-            Ray ray = _camera.ViewportPointToRay(Input.mousePosition);
+            if (!Enabled)
+                return;
+
+            var mousePosition = _mousePosition.action.ReadValue<Vector2>();
+            var ray = _camera.ViewportPointToRay(mousePosition);
+
             bool foundAnything = 
                 Physics.Raycast(ray, out var hitInfo, 2f) &&
                 hitInfo.collider != null;

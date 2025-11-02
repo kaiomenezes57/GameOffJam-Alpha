@@ -1,11 +1,12 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
+using Game.Core.Utilities.DisablableComponent;
 
 namespace Game.Domains.Player
 {
     [RequireComponent(typeof(CharacterController))]
-    public sealed class PlayerMovement : MonoBehaviour
+    public sealed class PlayerMovement : BaseDisablableComponent
     {
         [SerializeField] private CharacterController _controller;
         [SerializeField] private InputActionReference _moveAxis;
@@ -39,6 +40,9 @@ namespace Game.Domains.Player
 
         private void Update()
         {
+            if (!Enabled)
+                return;
+
             var input = _moveAxis.action.ReadValue<Vector2>().normalized;
             var moveDirectionLocal = Vector3.zero;
             moveDirectionLocal.x = input.x;
