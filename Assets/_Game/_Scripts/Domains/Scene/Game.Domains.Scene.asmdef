@@ -2,7 +2,9 @@
     "name": "Game.Domains.Scene",
     "rootNamespace": "Game.Domains.Scene",
     "references": [
-        "GUID:48afeb21d44dbad47855f7fc59efe6b4"
+        "GUID:48afeb21d44dbad47855f7fc59efe6b4",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
