@@ -1,0 +1,16 @@
+{
+    "name": "Game.Domains.GameState",
+    "rootNamespace": "Game.Domains.GameState",
+    "references": [
+        "GUID:48afeb21d44dbad47855f7fc59efe6b4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
