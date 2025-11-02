@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using Game.Core.FadeTransition;
+using Game.Core.GameState;
 using Game.Core.Scene;
 using Game.Core.Scene.Data;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace Game.Domains.Scene
 {
     public sealed class SceneController : ISceneController
     {
+        [Inject] private readonly IGameStateHandler _gameStateHandler;
         [Inject] private readonly IFadeTransition _fadeTransition;
 
         public async void LoadScene(SceneDataSO sceneData)
@@ -41,7 +43,8 @@ namespace Game.Domains.Scene
                             continue;
                         SceneManager.SetActiveScene(scene);
                     }
-                });
+                }, 
+                onFadeInCompleted: () => _gameStateHandler.Change(sceneData.InitialGameState, this));
         }
     }
 }

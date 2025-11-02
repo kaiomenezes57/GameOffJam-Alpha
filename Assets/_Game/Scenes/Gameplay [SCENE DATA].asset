@@ -13,3 +13,11 @@ MonoBehaviour:
   m_Name: 'Gameplay [SCENE DATA]'
   m_EditorClassIdentifier: Game.Core::Game.Core.Scene.Data.SceneDataSO
   <SceneName>k__BackingField: Gameplay
+  InitialGameState:
+    rid: 7194533457055711294
+  references:
+    version: 2
+    RefIds:
+    - rid: 7194533457055711294
+      type: {class: Gameplay_GameState, ns: Game.Core.GameState, asm: Game.Core}
+      data: 

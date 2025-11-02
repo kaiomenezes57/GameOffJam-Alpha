@@ -724,6 +724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953597190}
   - component: {fileID: 953597191}
+  - component: {fileID: 953597195}
   - component: {fileID: 953597193}
   - component: {fileID: 953597192}
   - component: {fileID: 953597194}
@@ -787,7 +788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f27e9a2df289743a8d86668c99781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Domains.Player::Game.Domains.Player.PlayerCamera
+  <Enabled>k__BackingField: 0
   _lookAxis: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _userConfig: {fileID: 11400000, guid: 54e6f4764db03184a93541d4f41016c3, type: 2}
   _camera: {fileID: 1268430038}
 --- !u!114 &953597193
 MonoBehaviour:
@@ -801,6 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8182803ee84ca4499c3a840ad071dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Domains.Player::Game.Domains.Player.PlayerMovement
+  <Enabled>k__BackingField: 0
   _controller: {fileID: 953597191}
   _moveAxis: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _sprintInput: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -817,7 +821,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0c6db14512ac448ac41ba503a1ef9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Domains.Player::Game.Domains.Player.PlayerInteractionBrowser
+  <Enabled>k__BackingField: 0
   _interactInput: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _mousePosition: {fileID: -1654692200621890270, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+--- !u!114 &953597195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953597189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831235ed4902bbf499a61e2f6e338ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Core::Game.Core.Utilities.DisablableComponent.ComponentsSwitcher
 --- !u!1 &1268430036
 GameObject:
   m_ObjectHideFlags: 0

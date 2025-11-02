@@ -13,3 +13,11 @@ MonoBehaviour:
   m_Name: 'MainMenu [SCENE DATA]'
   m_EditorClassIdentifier: Game.Core::Game.Core.Scene.Data.SceneDataSO
   <SceneName>k__BackingField: MainMenu
+  InitialGameState:
+    rid: 7194533457055711293
+  references:
+    version: 2
+    RefIds:
+    - rid: 7194533457055711293
+      type: {class: MainMenu_GameState, ns: Game.Core.GameState, asm: Game.Core}
+      data: 

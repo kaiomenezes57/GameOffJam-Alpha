@@ -26,8 +26,10 @@ namespace Game.Domains.GameState
                 return;
 
             var state = _previousGameStates[caller];
+            if (state == null)
+                return;
+            
             Change(state);
-
             EventBus.Raise(new OnChangeGameState(state));
         }
     }

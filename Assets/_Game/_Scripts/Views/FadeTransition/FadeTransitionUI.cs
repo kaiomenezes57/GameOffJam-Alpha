@@ -1,9 +1,11 @@
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Game.Core.FadeTransition;
+using Game.Core.GameState;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using VContainer;
 
 namespace Game.Views.FadeTransition
 {
@@ -12,6 +14,7 @@ namespace Game.Views.FadeTransition
     /// </summary>
     public sealed class FadeTransitionUI : MonoBehaviour, IFadeTransition
     {
+        [Inject] private readonly IGameStateHandler _gameStateHandler;
         [SerializeField] private Image _blackImage;
 
         private void Start()
@@ -42,6 +45,8 @@ namespace Game.Views.FadeTransition
 
         private async UniTask FadeOut(float fadeDuration, Action onFadeOutCompleted)
         {
+            _gameStateHandler.Change(new FadeTransition_GameState(), this);
+
             await _blackImage.DOFade(1f, fadeDuration)
              .SetUpdate(true)
              .AsyncWaitForCompletion();
@@ -57,6 +62,7 @@ namespace Game.Views.FadeTransition
                 .SetUpdate(true)
                 .AsyncWaitForCompletion();
 
+            _gameStateHandler.BackToPrevious(this);
             onFadeInCompleted?.Invoke();
         }
     }

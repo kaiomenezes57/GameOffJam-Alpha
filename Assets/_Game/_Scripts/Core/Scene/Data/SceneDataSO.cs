@@ -1,3 +1,5 @@
+using Game.Core.GameState;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Game.Core.Scene.Data
@@ -6,5 +8,6 @@ namespace Game.Core.Scene.Data
     public sealed class SceneDataSO : ScriptableObject
     {
         [field: SerializeField] public string SceneName { get; private set; }
+        [ShowInInspector, SerializeReference] public IGameState InitialGameState;
     }
 }
