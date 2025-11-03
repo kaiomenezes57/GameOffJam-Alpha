@@ -6,4 +6,28 @@ namespace Game.Core.Events
     {
 
     }
+
+    public sealed class RequestDialogue_GameEvent : IGameEvent
+    {
+        public bool IsValid()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    public sealed class NextDialogue_GameEvent : IGameEvent
+    {
+        public bool IsValid()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    public sealed class EndDialogue_GameEvent : IGameEvent
+    {
+        public bool IsValid()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

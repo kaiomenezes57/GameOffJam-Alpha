@@ -20,16 +20,10 @@ namespace Game.Services.DI
 
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.Register<GameStateHandler>(Lifetime.Singleton)
-                .As<IGameStateHandler>()
-                .AsSelf();
-
+            builder.Register<IGameStateHandler, GameStateHandler>(Lifetime.Singleton);
+            builder.Register<ISceneController, SceneController>(Lifetime.Singleton);
             builder.RegisterComponentInNewPrefab(_fadeTransitionPrefab, Lifetime.Singleton)
                 .As<IFadeTransition>()
-                .AsSelf();
-
-            builder.Register<SceneController>(Lifetime.Singleton)
-                .As<ISceneController>()
                 .AsSelf();
         }
 

@@ -14,7 +14,7 @@ namespace Game.Core.Utilities.DisablableComponent
 
         public void Switch(bool enabled)
         {
-            Enabled |= enabled;
+            Enabled = enabled;
         }
     }
 }

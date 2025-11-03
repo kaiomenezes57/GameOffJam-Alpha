@@ -1,0 +1,20 @@
+{
+    "name": "Game.Domains.Dialogue",
+    "rootNamespace": "Game.Domains.Dialogue",
+    "references": [
+        "GUID:48afeb21d44dbad47855f7fc59efe6b4",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:eec0964c48f6f4e40bc3ec2257ccf8c5",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:0c752da273b17c547ae705acf0f2adf2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

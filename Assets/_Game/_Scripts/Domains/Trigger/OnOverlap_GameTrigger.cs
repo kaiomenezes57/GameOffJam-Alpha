@@ -8,7 +8,7 @@ namespace Game.Domains.Trigger
     {
         [SerializeField] private string _tag = "Player";
 
-        private void Start()
+        private void Awake()
         {
             if (!gameObject.TryGetOrAdd<BoxCollider>(out var boxCollider))
             {

@@ -3,9 +3,12 @@
     "rootNamespace": "Game.Services",
     "references": [
         "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
         "GUID:48afeb21d44dbad47855f7fc59efe6b4",
         "GUID:44cc88bf982b76e458a5caeea1e1b409",
         "GUID:acbe109fded10f24daa1801898f397aa",
+        "GUID:34fd77ee3b41b6c4d98345cfa8251001",
+        "GUID:037ceb3e9619bcc4a859bf0fa4740112",
         "GUID:35d0b53a8d3cb9c4db6084f894bec9b6"
     ],
     "includePlatforms": [],

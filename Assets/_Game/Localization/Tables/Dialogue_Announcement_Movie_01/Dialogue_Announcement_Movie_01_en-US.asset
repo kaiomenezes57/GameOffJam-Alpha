@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_Announcement_Movie_01_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 3e5870fabcbf3594da3f634fdc09e310, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12738461696
+    m_Localized: "[NICOLE (VOC\xCA)] Ei, n\xE3o pensa que acabou n\xE3o t\xE1? A
+      seguir teremos... t\xE3n d\xE3n d\xE3n d\xE3n... \"A Vingan\xE7a do Coiote\",
+      que nome estranho, n\xE9? Vers\xE3o especial de Natal!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15611559936
+    m_Localized: "[NICOLE (VOC\xCA)] Fica com a gente, porque voc\xEA sabe aonde
+      tem divers\xE3o, n\xE9? Aqui mesmo no canal 98, por voc\xEA e pra voc\xEA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110214086656
+    m_Localized: "[NICOLE (VOC\xCA)] Vambora, play na quinta de natal porque quintou.
+      Juizo, hein? Olha o metanol..."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
