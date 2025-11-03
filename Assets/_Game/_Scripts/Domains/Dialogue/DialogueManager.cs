@@ -1,10 +1,13 @@
 using Game.Core.Dialogue;
+using Game.Core.Events;
 using Game.Core.Extensions;
 using Game.Core.GameState;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using VContainer;
+using static Codice.CM.WorkspaceServer.WorkspaceTreeDataStore;
 
 namespace Game.Domains.Dialogue
 {
@@ -14,6 +17,7 @@ namespace Game.Domains.Dialogue
         private readonly IDialogueAudioService _dialogueAudioService;
         private readonly IGameStateHandler _gameStateHandler;
         private readonly Queue<string> _dialogueLines;
+        private UnityEvent _onDialogueEnd;
 
         [Inject]
         public DialogueManager(IDialogueViewUI dialogueUI, 
@@ -43,6 +47,10 @@ namespace Game.Domains.Dialogue
 
             _dialogueLines.Clear();
             _gameStateHandler.Change(new Dialogue_GameState(), this);
+            EventBus.Raise(new OnStartDialogue(content));
+
+            content.OnDialogueStart?.Invoke();
+            _onDialogueEnd = content.OnDialogueEnd;
 
             foreach (var entry in entries)
                 _dialogueLines.Enqueue(entry);
@@ -75,7 +83,11 @@ namespace Game.Domains.Dialogue
             _dialogueViewUI.Hide();
             _dialogueAudioService.Stop();
 
+            _onDialogueEnd?.Invoke();
+            _onDialogueEnd = null;
+
             _gameStateHandler.BackToPrevious(this);
+            EventBus.Raise(new OnEndDialogue());
         }
 
         public void Dispose()

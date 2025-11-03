@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 using Unity.Cinemachine;
 using UnityEngine;
 using Game.Core.GameUserConfig;
+using Game.Core.Events;
+using System;
+using DG.Tweening;
 
 namespace Game.Domains.Player
 {
@@ -16,11 +19,13 @@ namespace Game.Domains.Player
         private void OnEnable()
         {
             _lookAxis.action.Enable();
+            EventBus.Subscribe<OnStartDialogue>(LookAtTarget);
         }
 
         private void OnDisable()
         {
             _lookAxis.action.Disable();
+            EventBus.UnSubscribe<OnStartDialogue>(LookAtTarget);
         }
 
         private void LateUpdate()
@@ -40,6 +45,23 @@ namespace Game.Domains.Player
                 _cameraPitch,
                 _camera.transform.localEulerAngles.y,
                 _camera.transform.localEulerAngles.z);
+        }
+
+        private void LookAtTarget(OnStartDialogue dialogue)
+        {
+            if (dialogue.DialogueData.SpeakerTransform == null)
+                return;
+
+            Vector3 direction = 
+                dialogue.DialogueData.SpeakerTransform.position - 
+                _camera.transform.position;
+            direction.y = 0;
+
+            if (direction == Vector3.zero)
+                return;
+
+            var targetRotation = Quaternion.LookRotation(direction);
+            transform.DORotate(targetRotation.eulerAngles, 1f);
         }
     }
 }

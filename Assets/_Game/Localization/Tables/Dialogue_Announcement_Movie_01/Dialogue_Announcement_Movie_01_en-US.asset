@@ -19,19 +19,33 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 12738461696
-    m_Localized: "[NICOLE (VOC\xCA)] Ei, n\xE3o pensa que acabou n\xE3o t\xE1? A
-      seguir teremos... t\xE3n d\xE3n d\xE3n d\xE3n... \"A Vingan\xE7a do Coiote\",
-      que nome estranho, n\xE9? Vers\xE3o especial de Natal!"
+    m_Localized: "[NICOLE (VOC\xCA)] Ei, n\xE3o pensa que acabou n\xE3o t\xE1? "
     m_Metadata:
       m_Items: []
   - m_Id: 15611559936
     m_Localized: "[NICOLE (VOC\xCA)] Fica com a gente, porque voc\xEA sabe aonde
-      tem divers\xE3o, n\xE9? Aqui mesmo no canal 98, por voc\xEA e pra voc\xEA."
+      tem divers\xE3o, n\xE9?"
     m_Metadata:
       m_Items: []
   - m_Id: 110214086656
-    m_Localized: "[NICOLE (VOC\xCA)] Vambora, play na quinta de natal porque quintou.
-      Juizo, hein? Olha o metanol..."
+    m_Localized: "[NICOLE (VOC\xCA)] Vambora, play na quinta de natal porque quintou."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41384593948672
+    m_Localized: "[NICOLE (VOC\xCA)] A seguir teremos: t\xE3n d\xE3n d\xE3n d\xE3n..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41427094831104
+    m_Localized: "[NICOLE (VOC\xCA)] A Vingan\xE7a do Coiote, que nome estranho,
+      n\xE9? Vers\xE3o especial de Natal!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41470421991424
+    m_Localized: "[NICOLE (VOC\xCA)] Aqui mesmo no canal 98, por voc\xEA e pra voc\xEA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41496518950912
+    m_Localized: "[NICOLE (VOC\xCA)] Juizo, hein? Olha o metanol..."
     m_Metadata:
       m_Items: []
   references:

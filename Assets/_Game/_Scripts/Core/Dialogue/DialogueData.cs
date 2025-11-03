@@ -17,6 +17,7 @@ namespace Game.Core.Dialogue
         [field: Title("Content")]
         [field: SerializeField] public StringTable DialogueTable { get; private set; }
         [field: SerializeField] public EventReference Audio { get; private set; }
+        [field: SerializeField] public Transform SpeakerTransform { get; private set; }
 
         [field: Title("Unity Events")]
         [field: SerializeField] public UnityEvent OnDialogueStart { get; private set; }

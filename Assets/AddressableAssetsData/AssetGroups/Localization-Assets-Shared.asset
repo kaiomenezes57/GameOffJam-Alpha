@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: 316a2390754389a4d8634d74d0bd3686
   m_SerializeEntries:
+  - m_GUID: 027195ea01a546e498e8ba1906defbd5
+    m_Address: Assets/_Game/Localization/Tables/Default/Default Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3e5870fabcbf3594da3f634fdc09e310
     m_Address: Assets/_Game/Localization/Tables/Dialogue_Test/Dialogue_Test Shared
       Data.asset

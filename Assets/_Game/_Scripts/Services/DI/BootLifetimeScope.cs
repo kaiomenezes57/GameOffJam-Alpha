@@ -9,6 +9,7 @@ using UnityEngine;
 using Game.Core.FadeTransition;
 using Sirenix.OdinInspector;
 using Game.Core.Scene.Data;
+using UnityEngine.SceneManagement;
 
 namespace Game.Services.DI
 {
@@ -29,6 +30,15 @@ namespace Game.Services.DI
 
         private void Start()
         {
+#if DEBUG
+            if (SceneManager.sceneCount > 1)
+            {
+                var gameStateHandler = Container.Resolve<IGameStateHandler>();
+                gameStateHandler?.Change(new Gameplay_GameState(), this);
+                return;
+            }
+#endif
+
             var sceneController = Container.Resolve<ISceneController>();
             sceneController?.LoadScene(_firstScene);
         }

@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
   m_GUID: 5635c8649d7094349994c95de3014495
   m_SerializeEntries:
+  - m_GUID: 3f6c1a21af7797643bf558d3a3c37b1c
+    m_Address: Default_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0e546bae9074364ea4e182ce1f67166
     m_Address: Dialogue_Announcement_Movie_01_pt-BR
     m_ReadOnly: 1
