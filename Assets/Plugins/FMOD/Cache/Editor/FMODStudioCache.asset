@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638977899116645798
+  lastModified: 638977902673460285
   FileSizes:
   - Name: Desktop
     Value: 850
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638977899116625794
+  lastModified: 638977902673440282
   FileSizes:
   - Name: Desktop
     Value: 1440320
@@ -63,7 +63,7 @@ MonoBehaviour:
   - {fileID: -7146374716304060490}
   StringsBanks:
   - {fileID: -8629196071918404961}
-  cacheTime: 638977899116645798
+  cacheTime: 638977902673460285
   cacheVersion: 131633
 --- !u!114 &1715283894182949463
 MonoBehaviour:
