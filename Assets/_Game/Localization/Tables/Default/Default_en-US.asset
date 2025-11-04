@@ -22,6 +22,22 @@ MonoBehaviour:
     m_Localized: '[...NEXT...]'
     m_Metadata:
       m_Items: []
+  - m_Id: 299444111761408
+    m_Localized: Typing...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302653828063232
+    m_Localized: "Moz\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323390097940480
+    m_Localized: Pressione qualquer tecla para digitar...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324737081892864
+    m_Localized: Pressione [ENTER] para enviar...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

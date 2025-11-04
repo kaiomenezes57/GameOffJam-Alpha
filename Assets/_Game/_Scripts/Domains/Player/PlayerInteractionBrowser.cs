@@ -9,7 +9,6 @@ namespace Game.Domains.Player
     public sealed class PlayerInteractionBrowser : BaseDisablableComponent
     {
         [SerializeField] private InputActionReference _interactInput;
-        [SerializeField] private InputActionReference _mousePosition;
         private Camera _camera;
 
         private IInteractable Current
@@ -28,16 +27,12 @@ namespace Game.Domains.Player
         {
             _interactInput.action.Enable();
             _interactInput.action.performed += Interact;
-            
-            _mousePosition.action.Enable();
         }
 
         private void OnDisable()
         {
             _interactInput.action.Disable();
             _interactInput.action.performed -= Interact;
-
-            _mousePosition.action.Disable();
         }
 
         private void Start()
@@ -50,7 +45,7 @@ namespace Game.Domains.Player
             if (!Enabled)
                 return;
 
-            var mousePosition = _mousePosition.action.ReadValue<Vector2>();
+            var mousePosition = Mouse.current.position.ReadValue();
             var ray = _camera.ViewportPointToRay(mousePosition);
 
             bool foundAnything = 

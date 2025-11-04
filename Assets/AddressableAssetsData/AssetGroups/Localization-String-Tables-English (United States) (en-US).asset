@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15a2456762c6b2741ae8e10ee3b12268
+    m_Address: MessageChat_Test_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a59846c4fe9cd7142851a91c79021c15
     m_Address: Dialogue_Announcement_Movie_01_en-US
     m_ReadOnly: 1

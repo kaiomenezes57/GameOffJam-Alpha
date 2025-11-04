@@ -20,6 +20,12 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18146fb6b020fc543a58f06cb7a30c38
+    m_Address: Assets/_Game/Localization/Tables/MessageChat_Test/MessageChat_Test
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3e5870fabcbf3594da3f634fdc09e310
     m_Address: Assets/_Game/Localization/Tables/Dialogue_Test/Dialogue_Test Shared
       Data.asset

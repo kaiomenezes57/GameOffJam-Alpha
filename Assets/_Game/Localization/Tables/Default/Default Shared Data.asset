@@ -19,6 +19,22 @@ MonoBehaviour:
     m_Key: next_dialogue_button
     m_Metadata:
       m_Items: []
+  - m_Id: 299444111761408
+    m_Key: chat_typing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302653828063232
+    m_Key: contact_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323390097940480
+    m_Key: message_chat_type_instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324737081892864
+    m_Key: message_chat_confirm_instruction
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
