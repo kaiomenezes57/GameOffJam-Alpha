@@ -6,6 +6,7 @@ using Game.Domains.Dialogue;
 using Game.Services.Audio;
 using Game.Views.Dialogue;
 using UnityEngine;
+using Game.Views.Debug;
 
 namespace Game.Services.DI
 {
@@ -20,6 +21,9 @@ namespace Game.Services.DI
             builder.Register<IDialogueManager, DialogueManager>(Lifetime.Singleton);
 
             builder.RegisterComponentInHierarchy<BaseGameTrigger>();
+#if DEBUG
+            builder.RegisterComponentInHierarchy<DebugInformation>();
+#endif
         }
     }
 }
