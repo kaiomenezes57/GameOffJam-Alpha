@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/MainMenu.unity
     guid: 55feb25aaf6721d4aa07a28e2b8d3c88
   - enabled: 1
-    path: Assets/_Game/Scenes/Gameplay.unity
+    path: Assets/_Game/Scenes/TV_Building_Gameplay.unity
     guid: 1645860b3a8812044ad18a3cbf29d57a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: c1bd4f81b233b0148a10c28087857502, type: 2}

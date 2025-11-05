@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638978561750945385
+  lastModified: 638979637177733781
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1130
   Exists: 1
 --- !u!114 &-7146374716304060490
 MonoBehaviour:
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638978561750925377
+  lastModified: 638979637177713779
   FileSizes:
   - Name: Desktop
-    Value: 2072256
+    Value: 2080864
   Exists: 1
 --- !u!114 &-5259014814047112765
 MonoBehaviour:
@@ -94,6 +94,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11791
+--- !u!114 &-4455579600942969457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light/Light_TurnOn
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Light/Light_TurnOn
+  Guid:
+    Data1: -1551210651
+    Data2: 1307595662
+    Data3: 509437361
+    Data4: 1132149408
+  Banks:
+  - {fileID: -7146374716304060490}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
+--- !u!114 &-2378717524913331537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Light/Light_TurnOff
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Light/Light_TurnOff
+  Guid:
+    Data1: 1504739130
+    Data2: 1309919737
+    Data3: 1529707708
+    Data4: -1803843197
+  Banks:
+  - {fileID: -7146374716304060490}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 242
 --- !u!114 &-779128931989256416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,12 +196,14 @@ MonoBehaviour:
   - {fileID: -5259014814047112765}
   - {fileID: -4930631326002217140}
   - {fileID: -779128931989256416}
+  - {fileID: -2378717524913331537}
+  - {fileID: -4455579600942969457}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7146374716304060490}
   StringsBanks:
   - {fileID: -8629196071918404961}
-  cacheTime: 638978561750945385
+  cacheTime: 638979637177733781
   cacheVersion: 131633
 --- !u!114 &1715283894182949463
 MonoBehaviour:

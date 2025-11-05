@@ -4,7 +4,7 @@ namespace Game.Core.Light
 {
     public interface ILightBehaviour
     {
-        void TurnOn();
-        void TurnOff();
+        void TurnOn(float delay);
+        void TurnOff(float delay);
     }
 }
