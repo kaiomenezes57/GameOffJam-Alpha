@@ -11,10 +11,10 @@ namespace Game.Domains.Trigger
         [SerializeField] private SceneDataSO _sceneData;
         private ISceneController _sceneController;
 
-        public override void Inject(IObjectResolver objectResolver)
+        public override void Inject(GameObject triggerGO, IObjectResolver objectResolver)
         {
             _sceneController = objectResolver.Resolve<ISceneController>();
-            base.Inject(objectResolver);
+            base.Inject(triggerGO, objectResolver);
         }
 
         protected override void OnTriggered()

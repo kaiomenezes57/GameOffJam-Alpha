@@ -20,7 +20,7 @@ namespace Game.Core.Trigger
         [SerializeField] private UnityEvent _onStartTriggering;
         [SerializeField] private UnityEvent _onTrigger;
 
-        public virtual void Inject(IObjectResolver objectResolver)
+        public virtual void Inject(GameObject triggerGO, IObjectResolver objectResolver)
         {
             Ready = true;
         }

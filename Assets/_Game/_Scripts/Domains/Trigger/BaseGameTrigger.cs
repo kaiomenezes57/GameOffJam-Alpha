@@ -12,10 +12,8 @@ namespace Game.Domains.Trigger
         [OdinSerialize, SerializeReference] private ITriggerAction[] _actions;
         [Inject] private readonly IObjectResolver _objectResolver;
 
-        private async void Start()
+        private void Start()
         {
-            await UniTask.WaitForSeconds(3f);
-
             if (_objectResolver == null)
             {
 #if DEBUG
@@ -25,7 +23,7 @@ namespace Game.Domains.Trigger
             }
 
             foreach (var action in _actions)
-                action.Inject(_objectResolver);
+                action.Inject(gameObject, _objectResolver);
         }
 
         public async void TriggerActions()

@@ -10,10 +10,10 @@ namespace Game.Domains.Trigger
         [SerializeField] private DialogueData _dialogueData;
         private IDialogueManager _dialogueManager;
 
-        public override void Inject(IObjectResolver objectResolver)
+        public override void Inject(GameObject triggerGO, IObjectResolver objectResolver)
         {
             _dialogueManager = objectResolver.Resolve<IDialogueManager>();
-            base.Inject(objectResolver);
+            base.Inject(triggerGO, objectResolver);
         }
 
         protected override void OnTriggered()

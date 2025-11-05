@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace Game.Domains.Trigger
 {
-    [RequireComponent(typeof(BoxCollider))]
-    public sealed class OnOverlap_GameTrigger : BaseGameTrigger
+    public sealed class OnTriggerExit_GameTrigger : BaseGameTrigger
     {
         [SerializeField] private string _tag = "Player";
 
@@ -21,7 +20,7 @@ namespace Game.Domains.Trigger
             boxCollider.isTrigger = true;
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerExit(Collider other)
         {
             if (other == null || !other.CompareTag(_tag))
                 return;

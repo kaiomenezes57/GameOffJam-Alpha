@@ -11,10 +11,10 @@ namespace Game.Domains.Trigger
         [SerializeField] private StringTable _messageChatData;
         private IMessageChatManager _messageChatManager;
 
-        public override void Inject(IObjectResolver objectResolver)
+        public override void Inject(GameObject triggerGO, IObjectResolver objectResolver)
         {
             _messageChatManager = objectResolver.Resolve<IMessageChatManager>();
-            base.Inject(objectResolver);
+            base.Inject(triggerGO, objectResolver);
         }
         protected override void OnTriggered()
         {

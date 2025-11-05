@@ -10,6 +10,7 @@ using Game.Views.Debug;
 using Game.Views.MessageChat;
 using Game.Core.MessageChat;
 using Game.Domains.MessageChat;
+using System.Collections.Generic;
 
 namespace Game.Services.DI
 {
@@ -29,10 +30,23 @@ namespace Game.Services.DI
             builder.RegisterInstance<IMessageChatViewUI>(_messageChatUI);
             builder.Register<IMessageChatManager, MessageChatManager>(Lifetime.Singleton);
 
-            builder.RegisterComponentInHierarchy<BaseGameTrigger>();
+            RegisterAllGameObjects<BaseGameTrigger>();
 #if DEBUG
             builder.RegisterComponentInHierarchy<DebugInformation>();
 #endif
+        }
+
+        private void RegisterAllGameObjects<T>() where T : MonoBehaviour
+        {
+            autoInjectGameObjects ??= new List<GameObject>();
+            var monobehaviours = FindObjectsByType<T>(FindObjectsSortMode.None);
+
+            foreach (var mono in monobehaviours)
+            {
+                if (mono.gameObject == null)
+                    continue;
+                autoInjectGameObjects.Add(mono.gameObject);
+            }
         }
     }
 }
