@@ -51,9 +51,10 @@ namespace Game.Domains.Player
             Vector3 moveDirectionWorld = transform.TransformDirection(moveDirectionLocal);
             _motion.x = moveDirectionWorld.x * _currentMovementSpeed;
             _motion.z = moveDirectionWorld.z * _currentMovementSpeed;
+            _motion.y = 0f;
 
-            if (!_controller.isGrounded)
-                _motion.y += GRAVITY_VALUE * Time.deltaTime;
+            //if (!_controller.isGrounded)
+            //    _motion.y += GRAVITY_VALUE * Time.deltaTime;
 
             _controller.Move(_motion * Time.deltaTime);
         }
