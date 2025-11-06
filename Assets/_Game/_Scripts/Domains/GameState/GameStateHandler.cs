@@ -1,4 +1,5 @@
 using Game.Core.Events;
+using Game.Core.Extensions;
 using Game.Core.GameState;
 using Game.Core.StateMachine;
 using System.Collections.Generic;
@@ -9,15 +10,19 @@ namespace Game.Domains.GameState
     {
         private readonly Dictionary<object, IGameState> _previousGameStates = new();
 
-        public void Change(IGameState state, object caller)
+        public bool TryChange(IGameState state, object caller)
         {
             if (_previousGameStates.ContainsKey(caller))
-                return;
-            
+                return false;
+
+            if (Current != null && !Current.IsValidAsNextState(state))
+                return false;
+
             _previousGameStates[caller] = Current as IGameState;
             Change(state);
 
             EventBus.Raise(new OnChangeGameState(state));
+            return true;
         }
 
         public void BackToPrevious(object caller)

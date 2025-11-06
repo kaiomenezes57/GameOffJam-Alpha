@@ -25,11 +25,15 @@ namespace Game.Views.Debug
         {
             GUI.skin.label.margin = new RectOffset(0, 0, 0, 0);
             GUI.skin.label.padding = new RectOffset(0, 0, 0, 0);
-            GUI.skin.label.fontSize = 20;
+            GUI.skin.label.fontSize = 15;
 
             _gameTime = $"{TimeSpan.FromSeconds(Time.time):hh\\:mm\\:ss}";
 
-            GUILayout.BeginArea(new Rect(10, 10, 1000, 200));
+            float areaWidth = 300f;  // largura do bloco
+            float areaHeight = 200f; // altura do bloco
+            float xPos = Screen.width - areaWidth - 10f; // 10px da borda direita
+
+            GUILayout.BeginArea(new Rect(xPos, 10, areaWidth, areaHeight));
             GUILayout.Label("STATIC 98 - DEVELOPMENT PRE-ALPHA");
             GUILayout.Label($"Current Game State: {_gameStateHandlerMachine.Current.GetType().Name}");
             GUILayout.Label($"Game Time: {_gameTime}");

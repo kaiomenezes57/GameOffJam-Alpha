@@ -4,22 +4,22 @@ namespace Game.Core.Extensions
 {
     public static class StateMachineExtensions
     {
-        public static bool IsValidAsNextState(this IState source, IState nextState)
+        public static bool IsValidAsNextState(this IState source, IState nexState)
         {
-            if (source.GetType() == nextState.GetType())
+            if (source.GetType() == nexState.GetType())
                 return false;
 
-            var compatibleStates = source.CompatibleNextStates;
-            if (compatibleStates == null || compatibleStates.Length == 0)
+            var invalidStates = source.InvalidNextStates;
+            if (invalidStates == null || invalidStates.Length == 0)
                 return true;
 
-            foreach (var compatible in compatibleStates)
+            foreach (var invalid in invalidStates)
             {
-                if (compatible.GetType() == nextState.GetType())
-                    return true;
+                if (invalid.GetType() == nexState.GetType())
+                    return false;
             }
 
-            return false;
+            return true;
         }
     }
 }

@@ -37,18 +37,13 @@ namespace Game.Domains.Smartphone
 
         private void Switch(InputAction.CallbackContext _)
         {
-            if (!HandleCooldown()) return;
+            if (!HandleCooldown()) 
+                return;
 
             if (CurrentGameState is Phone_GameState)
-            {
                 TryPutDownPhone();
-                return;
-            }
-
-            if (CurrentGameState.IsValidAsNextState(new Phone_GameState()))
-            {
-                PickUpPhone();
-            }
+            else
+                TryPickUpPhone();
         }
 
         private bool HandleCooldown()
@@ -63,9 +58,11 @@ namespace Game.Domains.Smartphone
             return true;
         }
 
-        private void PickUpPhone()
+        private void TryPickUpPhone()
         {
-            _gameStateHandler.Change(new Phone_GameState(), this);
+            if (!_gameStateHandler.TryChange(new Phone_GameState(), this))
+                return;
+
             _phonePicker.PickUpPhone();
             _phoneScreenSelectorView.ShowScreen(_currentMode);
 
@@ -74,7 +71,8 @@ namespace Game.Domains.Smartphone
 
         private void TryPutDownPhone()
         {
-            if (!_canPutDownPhone) return;
+            if (!_canPutDownPhone) 
+                return;
 
             _gameStateHandler.BackToPrevious(this);
             _phonePicker.PutDownPhone(() => {

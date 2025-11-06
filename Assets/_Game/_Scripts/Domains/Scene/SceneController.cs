@@ -44,7 +44,7 @@ namespace Game.Domains.Scene
                         SceneManager.SetActiveScene(scene);
                     }
                 }, 
-                onFadeInCompleted: () => _gameStateHandler.Change(sceneData.InitialGameState, this));
+                onFadeInCompleted: () => _gameStateHandler.TryChange(sceneData.InitialGameState, this));
         }
     }
 }

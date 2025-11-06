@@ -45,7 +45,7 @@ namespace Game.Views.FadeTransition
 
         private async UniTask FadeOut(float fadeDuration, Action onFadeOutCompleted)
         {
-            _gameStateHandler.Change(new FadeTransition_GameState(), this);
+            _gameStateHandler.TryChange(new FadeTransition_GameState(), this);
 
             await _blackImage.DOFade(1f, fadeDuration)
              .SetUpdate(true)

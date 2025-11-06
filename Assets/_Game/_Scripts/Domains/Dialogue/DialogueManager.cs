@@ -46,7 +46,7 @@ namespace Game.Domains.Dialogue
             }
 
             _dialogueLines.Clear();
-            _gameStateHandler.Change(new Dialogue_GameState(), this);
+            _gameStateHandler.TryChange(new Dialogue_GameState(), this);
             EventBus.Raise(new OnStartDialogue(content));
 
             content.OnDialogueStart?.Invoke();

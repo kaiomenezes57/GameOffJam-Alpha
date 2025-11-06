@@ -34,7 +34,7 @@ namespace Game.Services.DI
             if (SceneManager.sceneCount > 1)
             {
                 var gameStateHandler = Container.Resolve<IGameStateHandler>();
-                gameStateHandler?.Change(new Gameplay_GameState(), this);
+                gameStateHandler?.TryChange(new Gameplay_GameState(), this);
                 return;
             }
 #endif

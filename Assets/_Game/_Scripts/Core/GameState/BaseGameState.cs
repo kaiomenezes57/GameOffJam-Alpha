@@ -6,7 +6,7 @@ namespace Game.Core.GameState
     {
         public abstract bool PlayerActive { get; }
         public abstract bool ShowMouse { get; }
-        public virtual IState[] CompatibleNextStates { get; }
+        public virtual IState[] InvalidNextStates { get; }
 
         public abstract void Enter(IStateMachine stateMachine);
         public virtual void Tick(IStateMachine stateMachine) { }

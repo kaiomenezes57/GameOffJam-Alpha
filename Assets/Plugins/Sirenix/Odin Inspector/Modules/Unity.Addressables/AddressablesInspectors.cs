@@ -7,8 +7,10 @@
 using System;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Modules.Addressables.Editor.Internal;
+#if UNITY_EDITOR
 using Sirenix.Reflection.Editor;
 using UnityEditor.U2D;
+#endif
 using UnityEngine;
 
 [assembly: RegisterAssetReferenceAttributeForwardToChild(typeof(InlineEditorAttribute))]

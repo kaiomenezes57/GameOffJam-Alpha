@@ -2,7 +2,7 @@ namespace Game.Core.StateMachine
 {
     public interface IState
     {
-        IState[] CompatibleNextStates { get; }
+        IState[] InvalidNextStates { get; }
         void Enter(IStateMachine stateMachine);
         void Tick(IStateMachine stateMachine);
         void Exit(IStateMachine stateMachine);
