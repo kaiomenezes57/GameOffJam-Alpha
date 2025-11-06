@@ -1,14 +1,13 @@
 using Cysharp.Threading.Tasks;
 using Game.Core.Events;
 using Game.Core.MessageChat;
-using Sirenix.OdinInspector;
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Localization;
 using UnityEngine.Pool;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 namespace Game.Views.MessageChat
 {
@@ -20,7 +19,8 @@ namespace Game.Views.MessageChat
 
         [SerializeField] private TextMeshProUGUI _contactStatusText;
         [SerializeField] private LocalizedString _typingStatus;
-        
+        [SerializeField] private UnityEvent _onEndChat;
+
         private IObjectPool<IMessageChatBubbleUI> _messageChatBubblePool;
         public event Action OnRequestNextMessage;
 
@@ -56,7 +56,6 @@ namespace Game.Views.MessageChat
             _contactStatusText.text = string.Empty;
         }
 
-        [Button]
         public async void ShowMessage(MessageChatData data)
         {
             _contactStatusText.text = _typingStatus.GetLocalizedString();
@@ -73,6 +72,11 @@ namespace Game.Views.MessageChat
 
             EventBus.Raise(new OnSendMessageOnChat(data));
             OnRequestNextMessage?.Invoke();
+        }
+
+        public void OnEndChat()
+        {
+            _onEndChat?.Invoke();
         }
     }
 }

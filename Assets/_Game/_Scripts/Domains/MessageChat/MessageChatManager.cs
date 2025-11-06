@@ -76,6 +76,7 @@ namespace Game.Domains.MessageChat
         private void EndChat()
         {
             _messageLinesQueue.Clear();
+            _messageChatViewUI.OnEndChat();
         }
     }
 }

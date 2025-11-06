@@ -21,8 +21,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09cfc37fd7e94f54f97c295989c08a8f
+    m_Address: PhoneNotepad_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 15a2456762c6b2741ae8e10ee3b12268
     m_Address: MessageChat_Test_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e0e7667f55dae646b153510dfee05bd
+    m_Address: Notifications_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US

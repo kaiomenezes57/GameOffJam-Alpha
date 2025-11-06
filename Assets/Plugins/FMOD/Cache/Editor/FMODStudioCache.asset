@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638979637177733781
+  lastModified: 638979678402086389
   FileSizes:
   - Name: Desktop
-    Value: 1130
+    Value: 1178
   Exists: 1
 --- !u!114 &-7146374716304060490
 MonoBehaviour:
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/GameOff-2025/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638979637177713779
+  lastModified: 638979678402061382
   FileSizes:
   - Name: Desktop
-    Value: 2080864
+    Value: 2104800
   Exists: 1
 --- !u!114 &-5259014814047112765
 MonoBehaviour:
@@ -198,12 +198,13 @@ MonoBehaviour:
   - {fileID: -779128931989256416}
   - {fileID: -2378717524913331537}
   - {fileID: -4455579600942969457}
+  - {fileID: 7091294276885611913}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7146374716304060490}
   StringsBanks:
   - {fileID: -8629196071918404961}
-  cacheTime: 638979637177733781
+  cacheTime: 638979678402086389
   cacheVersion: 131633
 --- !u!114 &1715283894182949463
 MonoBehaviour:
@@ -259,3 +260,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 93088
+--- !u!114 &7091294276885611913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Notification
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/UI_Notification
+  Guid:
+    Data1: 156003381
+    Data2: 1074372722
+    Data3: 95367094
+    Data4: 492518305
+  Banks:
+  - {fileID: -7146374716304060490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3382

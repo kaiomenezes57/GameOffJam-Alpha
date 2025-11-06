@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 namespace Game.Core.MessageChat
 {
@@ -7,5 +6,6 @@ namespace Game.Core.MessageChat
     {
         event Action OnRequestNextMessage;
         void ShowMessage(MessageChatData data);
+        void OnEndChat();
     }
 }

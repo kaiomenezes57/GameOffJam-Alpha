@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91e529fb1b1b2e349a1cb16752c8c87e
+    m_Address: PhoneNotepad_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: afe1b2f789efe0d43a10421f282e7627
     m_Address: MessageChat_Test_pt-BR
     m_ReadOnly: 1
@@ -29,6 +35,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0e546bae9074364ea4e182ce1f67166
     m_Address: Dialogue_Announcement_Movie_01_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea5a35f3a243ec54baa76da1368b476e
+    m_Address: Notifications_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR

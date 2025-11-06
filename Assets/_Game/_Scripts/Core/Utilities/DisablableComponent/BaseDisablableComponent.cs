@@ -12,7 +12,7 @@ namespace Game.Core.Utilities.DisablableComponent
             Switch(true);
         }
 
-        public void Switch(bool enabled)
+        public virtual void Switch(bool enabled)
         {
             Enabled = enabled;
         }

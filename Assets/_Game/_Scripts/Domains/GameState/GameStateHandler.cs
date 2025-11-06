@@ -30,6 +30,8 @@ namespace Game.Domains.GameState
                 return;
             
             Change(state);
+
+            _previousGameStates.Remove(caller);
             EventBus.Raise(new OnChangeGameState(state));
         }
     }
