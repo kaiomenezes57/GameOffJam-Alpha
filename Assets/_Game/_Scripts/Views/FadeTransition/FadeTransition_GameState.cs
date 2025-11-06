@@ -11,10 +11,5 @@ namespace Game.Views.FadeTransition
         public override IState[] InvalidNextStates { get; } = new IState[] {
             new Phone_GameState(),
         };
-
-
-        public override void Enter(IStateMachine stateMachine)
-        {
-        }
     }
 }
