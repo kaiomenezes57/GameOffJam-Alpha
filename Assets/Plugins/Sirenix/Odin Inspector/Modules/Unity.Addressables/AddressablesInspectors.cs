@@ -6,8 +6,8 @@
 
 using System;
 using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Modules.Addressables.Editor.Internal;
 #if UNITY_EDITOR
+using Sirenix.OdinInspector.Modules.Addressables.Editor.Internal;
 using Sirenix.Reflection.Editor;
 using UnityEditor.U2D;
 #endif
