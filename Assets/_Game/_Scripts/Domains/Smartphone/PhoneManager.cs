@@ -2,7 +2,6 @@ using Game.Core.Utilities.DisablableComponent;
 using UnityEngine.InputSystem;
 using Game.Core.StateMachine;
 using Game.Core.Smartphone;
-using Game.Core.Extensions;
 using Game.Core.GameState;
 using DG.Tweening;
 using UnityEngine;

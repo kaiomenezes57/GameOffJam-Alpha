@@ -14,6 +14,7 @@ using Game.Domains.UINotification;
 using Game.Core.Smartphone;
 using Game.Core.PhoneNotepad;
 using Game.Domains.PhoneNotepad;
+using Game.Core.Telephone;
 
 namespace Game.Services.DI
 {
@@ -42,6 +43,9 @@ namespace Game.Services.DI
             // Phone notepad Services
             builder.RegisterComponentInHierarchy<IPhoneNotepadView>();
             builder.Register<IPhoneNotepadManager, PhoneNotepadManager>(Lifetime.Singleton);
+
+            // Telephone Services
+            builder.RegisterComponentInHierarchy<ITelephone>();
 
             // GameObject registrations
             RegisterAllGameObjects<BaseGameTrigger>();
