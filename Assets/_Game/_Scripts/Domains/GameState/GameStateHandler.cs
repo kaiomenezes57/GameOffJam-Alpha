@@ -12,9 +12,6 @@ namespace Game.Domains.GameState
 
         public bool TryChange(IGameState state, object caller)
         {
-            if (_previousGameStates.ContainsKey(caller))
-                return false;
-
             if (Current != null && !Current.IsValidAsNextState(state))
                 return false;
 

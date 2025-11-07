@@ -15,6 +15,7 @@ using Game.Core.Smartphone;
 using Game.Core.PhoneNotepad;
 using Game.Domains.PhoneNotepad;
 using Game.Core.Telephone;
+using Game.Core.Extensions;
 
 namespace Game.Services.DI
 {
@@ -48,22 +49,10 @@ namespace Game.Services.DI
             builder.RegisterComponentInHierarchy<ITelephone>();
 
             // GameObject registrations
-            RegisterAllGameObjects<BaseGameTrigger>();
+            builder.RegisterGameObjectsOfType<BaseGameTrigger>(ref autoInjectGameObjects);
 #if DEBUG
             builder.RegisterComponentInHierarchy<DebugInformation>();
 #endif
-        }
-
-        private void RegisterAllGameObjects<T>() where T : MonoBehaviour
-        {
-            autoInjectGameObjects ??= new List<GameObject>();
-            var monobehaviours = FindObjectsByType<T>(FindObjectsSortMode.None);
-
-            foreach (var mono in monobehaviours)
-            {
-                if (mono.gameObject is not { } gameObject) continue;
-                autoInjectGameObjects.Add(gameObject);
-            }
         }
     }
 }

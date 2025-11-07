@@ -168,7 +168,7 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects: []
   _fadeTransitionPrefab: {fileID: 6845821337171426373, guid: caa3609acfbcae3428d239543fcb8d7f, type: 3}
-  _firstScene: {fileID: 11400000, guid: 9770a83d2c9966548aac1a47e1804044, type: 2}
+  _firstScene: {fileID: 11400000, guid: 4049630f3849a134a9bc56b0a6ca22ce, type: 2}
 --- !u!1 &780073342
 GameObject:
   m_ObjectHideFlags: 0
