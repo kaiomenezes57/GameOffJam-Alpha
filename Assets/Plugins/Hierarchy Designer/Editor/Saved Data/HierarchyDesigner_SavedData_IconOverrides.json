@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-1405503089-0",
+            "source": "builtin",
+            "value": "d_Spotlight Icon"
+        },
+        {
+            "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-8424543439622948124-184561673",
+            "source": "builtin",
+            "value": "d_LightProbeGroup Icon"
+        }
+    ]
+}
