@@ -46,7 +46,11 @@ namespace Game.Domains.Player
                 return;
 
             var mousePosition = Mouse.current.position.ReadValue();
-            var ray = _camera.ViewportPointToRay(mousePosition);
+            var ray = _camera.ScreenPointToRay(mousePosition);
+
+#if DEBUG
+            Debug.DrawRay(ray.origin, ray.direction * 2f, Color.red);
+#endif
 
             bool foundAnything = 
                 Physics.Raycast(ray, out var hitInfo, 2f) &&
@@ -56,9 +60,13 @@ namespace Game.Domains.Player
                 return;
             
             var gameObject = hitInfo.collider.gameObject;
-            var interactable = gameObject.GetComponentAnywhere<IInteractable>();
+            var interactable = gameObject.GetComponent<IInteractable>();
             var isValid = interactable != null && interactable.CanInteract();
-            
+
+#if DEBUG
+            Debug.DrawRay(ray.origin, ray.direction * 2f, Color.green);
+#endif
+
             Current = isValid ? interactable : null;
         }
 

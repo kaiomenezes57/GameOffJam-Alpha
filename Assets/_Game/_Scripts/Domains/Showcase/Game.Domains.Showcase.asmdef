@@ -1,0 +1,21 @@
+{
+    "name": "Game.Domains.Showcase",
+    "rootNamespace": "Game.Domains.Showcase",
+    "references": [
+        "GUID:48afeb21d44dbad47855f7fc59efe6b4",
+        "GUID:4307f53044263cf4b835bd812fc161a4",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:cfb41d7b39c0f80429ccbb6f29e3f90e",
+        "GUID:029c1c1b674aaae47a6841a0b89ad80e",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

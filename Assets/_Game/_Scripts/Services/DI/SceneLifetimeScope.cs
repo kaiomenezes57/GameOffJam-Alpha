@@ -16,6 +16,7 @@ using Game.Core.PhoneNotepad;
 using Game.Domains.PhoneNotepad;
 using Game.Core.Telephone;
 using Game.Core.Extensions;
+using Game.Core.Interaction;
 
 namespace Game.Services.DI
 {
@@ -50,6 +51,7 @@ namespace Game.Services.DI
 
             // GameObject registrations
             builder.RegisterGameObjectsOfType<BaseGameTrigger>(ref autoInjectGameObjects);
+            builder.RegisterGameObjectsOfType<BaseInteractable>(ref autoInjectGameObjects);
 #if DEBUG
             builder.RegisterComponentInHierarchy<DebugInformation>();
 #endif
