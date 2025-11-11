@@ -33,6 +33,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc1a5b348cdbda542bff803532df3a64
+    m_Address: Dialogue_Initial_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0e546bae9074364ea4e182ce1f67166
     m_Address: Dialogue_Announcement_Movie_01_pt-BR
     m_ReadOnly: 1

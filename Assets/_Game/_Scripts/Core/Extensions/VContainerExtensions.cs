@@ -10,7 +10,9 @@ namespace Game.Core.Extensions
             where T : MonoBehaviour
         {
             gameObjectList ??= new List<GameObject>();
-            var monobehaviours = Object.FindObjectsByType<T>(FindObjectsSortMode.None);
+            var monobehaviours = Object.FindObjectsByType<T>(
+                FindObjectsInactive.Include, 
+                FindObjectsSortMode.None);
 
             foreach (var mono in monobehaviours)
             {

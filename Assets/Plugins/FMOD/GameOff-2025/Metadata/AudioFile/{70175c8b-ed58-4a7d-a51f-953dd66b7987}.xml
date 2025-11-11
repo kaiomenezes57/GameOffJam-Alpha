@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{70175c8b-ed58-4a7d-a51f-953dd66b7987}">
+		<property name="assetPath">
+			<value>ElevenLabs_2025-11-11T19_58_45_Cassio_pvc_sp106_s77_sb100_se9_b_m2.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>14.628571428571428</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0d403e92-4912-4de2-9d49-731c554d65c3}</destination>
+		</relationship>
+	</object>
+</objects>

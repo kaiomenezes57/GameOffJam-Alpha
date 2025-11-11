@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30e4908a22cfa34cac49765c08ddeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Views::Game.Views.SplashArt.SplashArtAnimation
-  _nextScene: {fileID: 11400000, guid: 9770a83d2c9966548aac1a47e1804044, type: 2}
+  _nextScene: {fileID: 11400000, guid: 1151a6bd009ef8b46bf94675d3ccfb45, type: 2}
   _videoPlayer: {fileID: 51155690}
   _onVideoStarted:
     m_PersistentCalls:

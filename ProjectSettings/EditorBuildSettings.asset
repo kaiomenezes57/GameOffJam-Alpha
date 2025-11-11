@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/MainMenu.unity
     guid: 55feb25aaf6721d4aa07a28e2b8d3c88
   - enabled: 1
+    path: Assets/_Game/Scenes/InitialCutscene.unity
+    guid: 974c751e52347454cb0243763945a432
+  - enabled: 1
     path: Assets/_Game/Scenes/TV_Building_Gameplay.unity
     guid: 1645860b3a8812044ad18a3cbf29d57a
   m_configObjects:

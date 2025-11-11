@@ -20,7 +20,7 @@ using Game.Core.Interaction;
 
 namespace Game.Services.DI
 {
-    public sealed class SceneLifetimeScope : LifetimeScope
+    public sealed class GameplaySceneLifetimeScope : LifetimeScope
     {
         protected override void Configure(IContainerBuilder builder)
         {
