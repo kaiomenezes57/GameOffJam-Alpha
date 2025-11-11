@@ -1,8 +1,8 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 using Game.Core.Interaction;
-using Game.Core.Extensions;
 using Game.Core.Utilities.DisablableComponent;
+using Game.Core.Events;
 
 namespace Game.Domains.Player
 {
@@ -19,6 +19,7 @@ namespace Game.Domains.Player
                 if (_current == value)
                     return;
                 _current = value;
+                EventBus.Raise(new OnUpdateInteraction(_current));
             }
         }
         private IInteractable _current;
