@@ -2268,6 +2268,7 @@ GameObject:
   - component: {fileID: 81877500}
   - component: {fileID: 81877502}
   - component: {fileID: 81877501}
+  - component: {fileID: 81877503}
   m_Layer: 0
   m_Name: Point Light_05
   m_TagString: Untagged
@@ -2384,6 +2385,26 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &81877503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81877499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8b00d621160724384e3512f35c5011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Domains.Light::Game.Domains.Light.LightBehaviour
+  _startTurnedOn: 0
+  _light: {fileID: 81877502}
+  _onTurnOn:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTurnOff:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &82447191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1411717007275214296, guid: 8e5baa6b0daa99a48b117ae0d2323708, type: 3}
@@ -22168,7 +22189,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1384317530}
+  - {fileID: 2108621573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &537702233 stripped
@@ -34967,6 +34990,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 38984100}
     m_Modifications:
+    - target: {fileID: 10697067998422633, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
+      propertyPath: _lightObj
+      value: 
+      objectReference: {fileID: 1426004120}
     - target: {fileID: 822107125249796931, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6180992
@@ -48224,6 +48251,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3630984039792812060, guid: 917d500eacee9b44abe2bb12c5927775, type: 3}
   m_PrefabInstance: {fileID: 2004867826}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384317529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384317530}
+  - component: {fileID: 1384317531}
+  m_Layer: 0
+  m_Name: 'Initial_Tutorial [TRIGGER]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1384317530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384317529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 537163281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384317531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384317529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704eeb661c76fcc43a08c7b154a9a403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Domains.Trigger::Game.Domains.Trigger.OnEnable_GameTrigger
+  _actions:
+  - rid: 7194533660454027358
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 7194533660454027358
+      type: {class: NewPhoneNotepadTask_TriggerAction, ns: Game.Domains.PhoneNotepad, asm: Game.Domains.PhoneNotepad}
+      data:
+        _triggerOnce: 1
+        _delay: 5
+        _onStartTriggering:
+          m_PersistentCalls:
+            m_Calls: []
+        _onTrigger:
+          m_PersistentCalls:
+            m_Calls: []
+        _tasks:
+        - <Task>k__BackingField:
+            m_TableReference:
+              m_TableCollectionName: GUID:4c7bdd4d3e591934fb66c317a91e916d
+            m_TableEntryReference:
+              m_KeyId: 1914101790642176
+              m_Key: 
+            m_FallbackState: 0
+            m_WaitForCompletion: 0
+            m_LocalVariables: []
+          TaskCompleteTrigger:
+            rid: -2
+        - <Task>k__BackingField:
+            m_TableReference:
+              m_TableCollectionName: GUID:4c7bdd4d3e591934fb66c317a91e916d
+            m_TableEntryReference:
+              m_KeyId: 253483520000
+              m_Key: 
+            m_FallbackState: 0
+            m_WaitForCompletion: 0
+            m_LocalVariables: []
+          TaskCompleteTrigger:
+            rid: -2
 --- !u!4 &1393746510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3738385950278446277, guid: 3f1b422053c6bdb4aa1c0f3325534ffb, type: 3}
@@ -52128,6 +52240,7 @@ GameObject:
   - component: {fileID: 1473765620}
   - component: {fileID: 1473765622}
   - component: {fileID: 1473765621}
+  - component: {fileID: 1473765623}
   m_Layer: 0
   m_Name: Point Light_03
   m_TagString: Untagged
@@ -52244,6 +52357,26 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1473765623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473765619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8b00d621160724384e3512f35c5011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Domains.Light::Game.Domains.Light.LightBehaviour
+  _startTurnedOn: 0
+  _light: {fileID: 1473765622}
+  _onTurnOn:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTurnOff:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1474841218
 GameObject:
   m_ObjectHideFlags: 0
@@ -58529,6 +58662,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 888492405}
     m_Modifications:
+    - target: {fileID: 10697067998422633, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
+      propertyPath: _lightObj
+      value: 
+      objectReference: {fileID: 81877499}
     - target: {fileID: 822107125249796931, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.3943
@@ -67407,6 +67544,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 888492405}
     m_Modifications:
+    - target: {fileID: 10697067998422633, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
+      propertyPath: _lightObj
+      value: 
+      objectReference: {fileID: 1473765619}
     - target: {fileID: 822107125249796931, guid: acf7ad6a7d7fe9941885cc6be0f656e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.74
@@ -70729,6 +70870,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f1b422053c6bdb4aa1c0f3325534ffb, type: 3}
+--- !u!1 &2108621572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108621573}
+  - component: {fileID: 2108621574}
+  m_Layer: 0
+  m_Name: 'Dialogue_LetsTurnAllOn [TRIGGER]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2108621573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108621572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 537163281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2108621574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108621572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704eeb661c76fcc43a08c7b154a9a403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Domains.Trigger::Game.Domains.Trigger.OnEnable_GameTrigger
+  _actions: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &2109494061
 PrefabInstance:
   m_ObjectHideFlags: 0

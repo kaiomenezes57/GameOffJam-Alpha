@@ -30,6 +30,10 @@ MonoBehaviour:
     m_Localized: Ligar equipamentos na <b>sala de controle</b>.
     m_Metadata:
       m_Items: []
+  - m_Id: 1914101790642176
+    m_Localized: Me mover no [WASD] e interagir no [E]?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

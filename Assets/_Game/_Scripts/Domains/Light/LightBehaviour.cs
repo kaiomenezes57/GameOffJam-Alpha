@@ -72,5 +72,13 @@ namespace Game.Domains.Light
             _cts?.Dispose();
             _cts = new CancellationTokenSource();
         }
+
+        public void Switch(float delay)
+        {
+            if (_light.intensity > 0f)
+                TurnOff(delay);
+            else
+                TurnOn(delay);
+        }
     }
 }

@@ -6,5 +6,6 @@ namespace Game.Core.Light
     {
         void TurnOn(float delay);
         void TurnOff(float delay);
+        void Switch(float delay);
     }
 }
