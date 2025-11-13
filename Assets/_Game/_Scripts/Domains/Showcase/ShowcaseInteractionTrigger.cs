@@ -20,7 +20,8 @@ namespace Game.Domains.Showcase
 
         public override bool CanInteract()
         {
-            return (_gameStateHandler as IStateMachine).Current
+            return base.CanInteract() &&
+                (_gameStateHandler as IStateMachine).Current
                 .IsValidAsNextState(new Showcase_GameState());
         }
 

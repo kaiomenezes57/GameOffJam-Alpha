@@ -9,6 +9,7 @@ namespace Game.Domains.Player
     public sealed class PlayerInteractionBrowser : BaseDisablableComponent
     {
         [SerializeField] private InputActionReference _interactInput;
+        private const float INTERACTION_DISTANCE = 1.5f;
         private Camera _camera;
 
         private IInteractable Current
@@ -43,29 +44,34 @@ namespace Game.Domains.Player
 
         private void Update()
         {
-            if (!Enabled)
-                return;
+            //if (!Enabled)
+            //    return;
 
             var mousePosition = Mouse.current.position.ReadValue();
             var ray = _camera.ScreenPointToRay(mousePosition);
 
 #if DEBUG
-            Debug.DrawRay(ray.origin, ray.direction * 2f, Color.red);
+            Debug.DrawRay(ray.origin, ray.direction * INTERACTION_DISTANCE, Color.red);
 #endif
 
             bool foundAnything = 
-                Physics.Raycast(ray, out var hitInfo, 2f) &&
+                Physics.Raycast(ray, out var hitInfo, INTERACTION_DISTANCE) &&
                 hitInfo.collider != null;
 
             if (!foundAnything)
+            {
+                Current = null;
                 return;
+            }
             
             var gameObject = hitInfo.collider.gameObject;
             var interactable = gameObject.GetComponent<IInteractable>();
-            var isValid = interactable != null && interactable.CanInteract();
+            var isValid = interactable != null && 
+                (interactable as MonoBehaviour).enabled && 
+                interactable.CanInteract();
 
 #if DEBUG
-            Debug.DrawRay(ray.origin, ray.direction * 2f, Color.green);
+            Debug.DrawRay(ray.origin, ray.direction * INTERACTION_DISTANCE, Color.green);
 #endif
 
             Current = isValid ? interactable : null;

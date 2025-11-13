@@ -1370,7 +1370,8 @@ MonoBehaviour:
   - {fileID: 7833122117494664109}
   - {fileID: -3868868032475666847}
   - {fileID: 3871838732245749716}
-  m_RendererFeatureMap: ad6b866f10d7b46c61666cc905054fcad44f1b27d088bb35
+  - {fileID: 4868693159618353763}
+  m_RendererFeatureMap: ad6b866f10d7b46c61666cc905054fcad44f1b27d088bb35631a6d1ba2129143
   m_UseNativeRenderPass: 1
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 3
@@ -1594,6 +1595,35 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _range: {x: 0, y: 3}
+--- !u!114 &4868693159618353763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177ddeadd26a80641ad757c51fb7f5d1, type: 3}
+  m_Name: OutlineFxFeature
+  m_EditorClassIdentifier: OutlineFx::OutlineFx.OutlineFxFeature
+  m_Active: 1
+  _event: 600
+  _solid: 0.01
+  _thickness: 0.128
+  _alphaCutout: 0
+  _mode: 0
+  _filter: 1
+  _attachDepth: 1
+  _output:
+    enabled: 0
+    value: _globalTex
+  _solidMask:
+    _enabled: 0
+    _pattern: {fileID: 2800000, guid: 41acea03acbaebe4a9dc26dd8264449e, type: 3}
+    _scale: 50
+    _velocity: {x: 0, y: 0}
+  _shader: {fileID: 4800000, guid: 9a902e6d68fe8344890c5926c684e820, type: 3}
 --- !u!114 &4983862691177142453
 MonoBehaviour:
   m_ObjectHideFlags: 3

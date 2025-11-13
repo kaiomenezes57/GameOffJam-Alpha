@@ -23,12 +23,12 @@ MonoBehaviour:
     m_Key: header
     m_Metadata:
       m_Items: []
-  - m_Id: 253483520000
-    m_Key: task_turn_on_equip
-    m_Metadata:
-      m_Items: []
   - m_Id: 1914101790642176
     m_Key: task_initial_tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 253483520000
+    m_Key: task_turn_on_equip
     m_Metadata:
       m_Items: []
   m_Metadata:

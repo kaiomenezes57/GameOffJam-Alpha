@@ -1,6 +1,5 @@
 using Game.Core.Interaction;
 using Game.Core.Light;
-using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Game.Views
@@ -18,11 +17,6 @@ namespace Game.Views
         protected override void OnInteract()
         {
             _lightBehaviour?.Switch(0f);
-        }
-
-        public override bool CanInteract()
-        {
-            return true;
         }
     }
 }

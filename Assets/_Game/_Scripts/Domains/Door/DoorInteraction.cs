@@ -47,10 +47,5 @@ namespace Game.Domains.Door
                     unityEvent?.Invoke();
                 });
         }
-
-        public override bool CanInteract()
-        {
-            return true;
-        }
     }
 }

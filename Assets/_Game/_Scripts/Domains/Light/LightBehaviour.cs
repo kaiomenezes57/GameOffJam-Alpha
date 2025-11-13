@@ -14,7 +14,7 @@ namespace Game.Domains.Light
         [SerializeField] private bool _startTurnedOn = true;
         [SerializeField] private UnityEngine.Light _light;
 
-        private const float ANIMATION_DURATION = 0.5f;
+        private const float ANIMATION_DURATION = 0.2f;
         private CancellationTokenSource _cts;
         private float _initialIntensity;
 

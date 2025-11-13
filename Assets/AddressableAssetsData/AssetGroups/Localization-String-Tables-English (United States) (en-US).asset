@@ -33,6 +33,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f9ff9232811e4e499820468d366ca1a
+    m_Address: Dialogue_LetsTurnEverythingOn_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2e0e7667f55dae646b153510dfee05bd
     m_Address: Notifications_en-US
     m_ReadOnly: 1

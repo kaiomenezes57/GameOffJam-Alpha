@@ -4,6 +4,7 @@ using Sirenix.Serialization;
 using VContainer;
 using Cysharp.Threading.Tasks;
 using System.Linq;
+using Sirenix.OdinInspector;
 
 namespace Game.Domains.Trigger
 {
@@ -26,6 +27,7 @@ namespace Game.Domains.Trigger
                 action.Inject(gameObject, _objectResolver);
         }
 
+        [Button]
         public async void TriggerActions()
         {
             var actionsList = _actions.ToList();

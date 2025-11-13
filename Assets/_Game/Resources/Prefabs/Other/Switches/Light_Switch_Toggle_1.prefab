@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3711666347578244421}
   - component: {fileID: 5596028107664973045}
   - component: {fileID: 1638680958433886753}
+  - component: {fileID: 8026764368932947428}
+  - component: {fileID: 57768254894862489}
   m_Layer: 0
   m_Name: Wall_Plate_2
   m_TagString: Untagged
@@ -89,6 +91,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8026764368932947428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823951343289658048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4218d78ef2d54d0898b7514e121a781f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OutlineFx::OutlineFx.OutlineFx
+  _color: {r: 0, g: 1, b: 0.0009315014, a: 1}
+--- !u!114 &57768254894862489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823951343289658048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d420c29898df24cb433c44998f1f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Views::Game.Views.Interaction.InteractionOutline
 --- !u!1 &1262015147915198305
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e405dc2d7a9b1441a2a59e8d1620f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Views::Game.Views.LightSwitcher
+  _disableOnPlayerDisable: 1
   _onInteract:
     m_PersistentCalls:
       m_Calls:
