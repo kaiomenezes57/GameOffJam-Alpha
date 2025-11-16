@@ -430,7 +430,7 @@ MonoBehaviour:
     enabled: 1
     value: 0
   _mask:
-    enabled: 0
+    enabled: 1
     value:
       serializedVersion: 2
       m_Bits: 0

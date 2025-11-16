@@ -22,7 +22,7 @@ namespace Game.Domains.Telephone
 
         protected override void OnTriggered()
         {
-            _notificationManager.Show(Resources.Load<UINotificationDataSO>("IncomingPhoneCall [NOTIFICATION DATA]"));
+            //_notificationManager.Show(Resources.Load<UINotificationDataSO>("IncomingPhoneCall [NOTIFICATION DATA]"));
             _telephone.Ring(_dialogueData);
         }
     }

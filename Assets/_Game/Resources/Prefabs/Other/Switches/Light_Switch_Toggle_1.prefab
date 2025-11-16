@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3711666347578244421
 Transform:
@@ -132,7 +132,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7991203142982112325
 Transform:
@@ -221,7 +221,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &822107125249796931
 Transform:
@@ -276,6 +276,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Game.Views::Game.Views.LightSwitcher
   _disableOnPlayerDisable: 1
+  _interactionInformation:
+    _localizedCommandText:
+      m_TableReference:
+        m_TableCollectionName: GUID:3e0c4580c8fe44c4496d546271326a1d
+      m_TableEntryReference:
+        m_KeyId: 8363802624
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   _onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -292,6 +302,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _lightObj: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &6462409884882084698
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +321,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4848218236086268181
 Transform:
@@ -398,7 +411,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6334530059258067215
 Transform:

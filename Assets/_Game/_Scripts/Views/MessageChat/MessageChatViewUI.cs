@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using Game.Core.Events;
 using Game.Core.MessageChat;
 using System;
@@ -32,18 +33,23 @@ namespace Game.Views.MessageChat
                     return messageBubble.GetComponent<IMessageChatBubbleUI>();
                 },
                 actionOnGet: (bubble) => {
-                    if (bubble is not MonoBehaviour mono) return;
+                    if (bubble is not MonoBehaviour mono) 
+                        return;
+                    
                     mono.gameObject.SetActive(true);
                 },
                 actionOnRelease: (bubble) => {
-                    if (bubble is not MonoBehaviour mono) return;
+                    if (bubble is not MonoBehaviour mono) 
+                        return;
+                    
                     mono.gameObject.SetActive(false);
                     bubble.Clear();
                 },
                 actionOnDestroy: (bubble) => {
-                    if (bubble is not MonoBehaviour mono) return;
+                    if (bubble is not MonoBehaviour mono) 
+                        return;
+                    
                     bubble.Clear();
-
                     Destroy(mono.gameObject);
                 });
 
@@ -68,8 +74,7 @@ namespace Game.Views.MessageChat
             messageChatBubble?.Setup(data.Message, data.Sender);
             _contactStatusText.text = string.Empty;
 
-            _scrollRect.verticalNormalizedPosition = 0f;
-
+            DOVirtual.DelayedCall(0.5f, () => _scrollRect.verticalNormalizedPosition = 0f);
             EventBus.Raise(new OnSendMessageOnChat(data));
             OnRequestNextMessage?.Invoke();
         }

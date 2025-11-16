@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_BossCallsNicoleFirstTime_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 5cbfc0754327134449dba2b8bb59f73a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9001336832
+    m_Localized: "[Chefe] Fala, Nicole, deu tudo certo a\xED pra ligar as coisas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11153014784
+    m_Localized: "[Nicole (Voc\xEA)] Deu sim, inclusive j\xE1 t\xE1 funcionando,
+      dei uma checada na programa\xE7\xE3o e nos equipamentos tamb\xE9m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13292109824
+    m_Localized: "[Chefe] Perfeito, perfeito! Qualquer coisa voc\xEA pode me ligar,
+      t\xE1? \xC9 o mesmo telefone, s\xF3 apertar no bot\xE3o verde que j\xE1 cai
+      pra mim certinho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71475494912
+    m_Localized: "[Nicole (Voc\xEA)] Beleza. Aqui... hoje a gente vai passar aqueles
+      filmes que voc\xEA me mandou nas mensagens, n\xE9?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86323331072
+    m_Localized: '[Chefe] Isso mesmo, Nicole. Consegue passar pra mim certinho?
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 88328208384
+    m_Localized: "[Nicole (Voc\xEA)] Claro, passo sim, tem algo extra ou s\xF3 isso
+      a\xED mesmo pro natal?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90735738880
+    m_Localized: "[Chefe] Olha\u2026 pro natal esse ano a gente vai passar s\xF3
+      esses filmes mesmo e vamos for\xE7ar bastante esses comerciais narrados ao
+      vivo, sabe?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138097819648
+    m_Localized: "[Nicole (Voc\xEA)] Claro, tenho que seguir o texto ou posso dar
+      uma improvisadinha assim em alguns momentos?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 157488087040
+    m_Localized: "[Chefe] O ideal seria improvisar tamb\xE9m, vamos deixar bem natural.
+      S\xF3 segue o tema mesmo, restante voc\xEA tem liberdade. Pode ser?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172306563072
+    m_Localized: "[Nicole (Voc\xEA)] Claro, ent\xE3o vamos nessa! Vai dar bom.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191482920960
+    m_Localized: "[Chefe] Beleza ent\xE3o. E, Nicole, posso te pedir um favor tamb\xE9m?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 195199074304
+    m_Localized: "[Nicole (Voc\xEA)] Claro que sim, fa\xE7o isso! Ele tem nome?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 197757599744
+    m_Localized: "[Chefe] N\xE3o tem, voc\xEA pode at\xE9 chamar ele do seu jeito
+      a\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247506239488
+    m_Localized: "[Nicole (Voc\xEA)] T\xE1 certo\u2026 pode deixar ent\xE3o, chefe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262115000320
+    m_Localized: "[Chefe] S\xF3 isso mesmo, Nicole, qualquer coisa te ligo de novo.
+      Me liga tamb\xE9m se precisar, fechou?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280733515776
+    m_Localized: "[Nicole (Voc\xEA)] Tudo bem, tchau, um abra\xE7o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82864951885824
+    m_Localized: "[Chefe] A gente tem que fixar e mostrar pra qualquer investidor
+      que esteja assistindo esse tipo de coisa assim. Que a gente vai bater nessa
+      tecla. Tudo bem por voc\xEA, n\xE9?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83493829050368
+    m_Localized: "[Chefe] Acho que voc\xEA n\xE3o ficou sabendo\u2026 \xE9..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83606236397568
+    m_Localized: "[Chefe] A gente t\xE1 com um peixe na cozinha. O pessoal da noite
+      anterior deixou a comidinha dele no balc\xE3o da cozinha."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83650188509184
+    m_Localized: "[Chefe] Ser\xE1 que tu consegue por comida pra ele de umas 2 em
+      2 horas? Se quiser ir botar agora, j\xE1 agrade\xE7o."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

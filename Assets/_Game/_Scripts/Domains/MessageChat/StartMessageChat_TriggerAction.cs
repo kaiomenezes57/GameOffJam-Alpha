@@ -5,12 +5,14 @@ using Game.Core.Smartphone;
 using Game.Core.Trigger;
 using UnityEngine;
 using VContainer;
+using UnityEngine.Events;
 
 namespace Game.Domains.MessageChat
 {
     public sealed class StartMessageChat_TriggerAction : BaseTriggerAction
     {
         [SerializeField] private StringTable _messageChatData;
+        [SerializeField] private UnityEvent _onChatEnd;
         private IUINotificationManager _notificationManager;
         private IMessageChatManager _messageChatManager;
         private IPhoneManager _phoneManager;
@@ -31,7 +33,7 @@ namespace Game.Domains.MessageChat
             {
                 _notificationManager.Show(notificationData);
                 _phoneManager.SetNextMode(PhoneScreenType.Message);
-                _messageChatManager.ShowMessage(_messageChatData);
+                _messageChatManager.ShowMessage(_messageChatData, _onChatEnd);
 
                 return;
             }

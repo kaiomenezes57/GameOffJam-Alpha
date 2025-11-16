@@ -14,7 +14,7 @@ namespace Game.Views.Dialogue
         [SerializeField] private TextMeshProUGUI _dialogueText;
         public event Action OnNextDialogueRequested;
 
-        private const float BUTTON_INTERACTABLE_COOLDOWN = 3f;
+        private const float BUTTON_INTERACTABLE_COOLDOWN = 0f;
         private const float FADE_DURATION = 1f;
         private bool _useButton;
 

@@ -19,8 +19,15 @@ namespace Game.Domains.Player
             {
                 if (_current == value)
                     return;
+                
                 _current = value;
-                EventBus.Raise(new OnUpdateInteraction(_current));
+                
+                var informationProvider = _current is MonoBehaviour mono && 
+                    mono.TryGetComponent<IInteractableInformationProvider>(out var provider) ? 
+                    provider : 
+                    null;
+
+                EventBus.Raise(new OnUpdateInteraction(_current, informationProvider));
             }
         }
         private IInteractable _current;
@@ -55,7 +62,7 @@ namespace Game.Domains.Player
 #endif
 
             bool foundAnything = 
-                Physics.Raycast(ray, out var hitInfo, INTERACTION_DISTANCE) &&
+                Physics.Raycast(ray, out var hitInfo, INTERACTION_DISTANCE, LayerMask.GetMask("Interactable", "Wall")) &&
                 hitInfo.collider != null;
 
             if (!foundAnything)

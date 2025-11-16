@@ -26,9 +26,20 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2549723ea0ba92941b34ae2facc87948
+    m_Address: Assets/_Game/Localization/Tables/Dialogue_InitialBF/Dialogue_InitialBF
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3a1f0b9be5a3f704abe49d8ec9f7ca88
     m_Address: Assets/_Game/Localization/Tables/Notifications/Notifications Shared
       Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e0c4580c8fe44c4496d546271326a1d
+    m_Address: Assets/_Game/Localization/Tables/Interaction/Interaction Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -44,9 +55,26 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cbfc0754327134449dba2b8bb59f73a
+    m_Address: Assets/_Game/Localization/Tables/Dialogue_BossCallsNicoleFirstTime/Dialogue_BossCallsNicoleFirstTime
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 65909e52aa4db8d48a0be02ebcd258d1
     m_Address: Assets/_Game/Localization/Tables/Dialogue_LetsTurnEverythingOn/Dialogue_LetsTurnEverythingOn
       Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92e36f06a8575fd4caed3c5398ec7632
+    m_Address: Assets/_Game/Localization/Tables/Dialogue_Posters/Dialogue_Posters
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95aa3d249e90a6740a5eba4ebfd0a6e7
+    m_Address: Assets/_Game/Localization/Tables/TVPrograms/TVPrograms Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

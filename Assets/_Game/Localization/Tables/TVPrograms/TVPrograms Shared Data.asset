@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TVPrograms Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: TVPrograms
+  m_TableCollectionNameGuidString: 95aa3d249e90a6740a5eba4ebfd0a6e7
+  m_Entries:
+  - m_Id: 59735638016
+    m_Key: animation_madboys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 483565862912
+    m_Key: program_prankcentral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 641506574336
+    m_Key: movie_coyoterevenge
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7194533744917872711
+  references:
+    version: 2
+    RefIds:
+    - rid: 7194533744917872711
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1763223508768

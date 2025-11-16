@@ -21,14 +21,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06495771543180e4c898391e8c71b28d
+    m_Address: Dialogue_BossCallsNicoleFirstTime_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 09cfc37fd7e94f54f97c295989c08a8f
     m_Address: PhoneNotepad_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 113a45ba23d103244b12cdf7cb2e5a38
+    m_Address: Dialogue_Posters_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 15a2456762c6b2741ae8e10ee3b12268
     m_Address: MessageChat_Test_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b749efa513937e4c84b1f882473a474
+    m_Address: Interaction_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US
@@ -53,6 +71,18 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c472adaae2b09fc459030db2b40c7436
     m_Address: Dialogue_Initial_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8d02a659189b2f439c029e31e0facec
+    m_Address: TVPrograms_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2b98a776d5f1e04ea9f8aee69eb66bc
+    m_Address: MessageChat_InitialBF_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US

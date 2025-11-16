@@ -1,14 +1,19 @@
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Game.Core.Events;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization.Settings;
 
 namespace Game.Core.Interaction
 {
-    public abstract class BaseInteractable : MonoBehaviour, IInteractable
+    public abstract class BaseInteractable : MonoBehaviour, IInteractable, IInteractableInformationProvider
     {
         [SerializeField] private bool _disableOnPlayerDisable = true;
+        [SerializeField] private InteractionInformation _interactionInformation;
         [SerializeField] private UnityEvent _onInteract;
+
+        private string _defaultInteractionText;
         private Collider _collider;
         private bool _isInCooldown;
 
@@ -25,7 +30,10 @@ namespace Game.Core.Interaction
         private void Awake()
         {
             _collider = GetComponent<Collider>();
-            //gameObject.layer = 3;
+            gameObject.layer = LayerMask.NameToLayer("Interactable");
+            _defaultInteractionText = _interactionInformation.IsValid() ?
+                _interactionInformation.CommandText :
+                string.Empty;
         }
 
         private void SwitchEnable(OnChangeGameState state)
@@ -57,6 +65,11 @@ namespace Game.Core.Interaction
         public virtual bool CanInteract()
         {
             return true;
+        }
+
+        public string GetInteractionText()
+        {
+            return _defaultInteractionText;
         }
     }
 }

@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
   m_GUID: 5635c8649d7094349994c95de3014495
   m_SerializeEntries:
+  - m_GUID: 10507a45ae3c5234093e7de612b211ca
+    m_Address: MessageChat_InitialBF_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3f6c1a21af7797643bf558d3a3c37b1c
     m_Address: Default_pt-BR
     m_ReadOnly: 1
@@ -23,6 +29,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c5851433e9e3804db8f16e140f3ec07
     m_Address: Dialogue_LetsTurnEverythingOn_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 848dece07b491514dbc57902cf2f498a
+    m_Address: Dialogue_BossCallsNicoleFirstTime_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR
@@ -39,6 +51,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c20b48b847030364785e0993d21a51d5
+    m_Address: TVPrograms_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cc1a5b348cdbda542bff803532df3a64
     m_Address: Dialogue_Initial_pt-BR
     m_ReadOnly: 1
@@ -51,8 +69,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d47346148bfe8944abcd98672e6b60b5
+    m_Address: Interaction_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea5a35f3a243ec54baa76da1368b476e
     m_Address: Notifications_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2104716984e49f48b5875527ca0e374
+    m_Address: Dialogue_Posters_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR

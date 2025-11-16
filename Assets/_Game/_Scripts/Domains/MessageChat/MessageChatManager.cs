@@ -1,7 +1,9 @@
+using DG.Tweening;
 using Game.Core.Extensions;
 using Game.Core.MessageChat;
 using System;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine.Localization.Tables;
 using VContainer;
 
@@ -12,6 +14,7 @@ namespace Game.Domains.MessageChat
         private readonly IPlayerInputChatMessageViewUI _playerInputChatMessageService;
         private readonly IMessageChatViewUI _messageChatViewUI;
         private readonly Queue<MessageChatData> _messageLinesQueue = new();
+        private UnityEvent _onChatEnd;
 
         [Inject]
         public MessageChatManager(
@@ -28,13 +31,14 @@ namespace Game.Domains.MessageChat
             _messageChatViewUI.OnRequestNextMessage -= NextMessage;
         }
 
-        public async void ShowMessage(StringTable stringTable)
+        public async void ShowMessage(StringTable stringTable, UnityEvent onChatEnd)
         {
             var allEntries = await stringTable.GetAllEntries();
             if (allEntries.Count == 0)
                 return;
 
             _messageLinesQueue.Clear();
+            _onChatEnd = onChatEnd;
 
             foreach (var entry in allEntries)
             {
@@ -56,11 +60,11 @@ namespace Game.Domains.MessageChat
         {
             if (_messageLinesQueue.Count == 0)
             {
-                EndChat();
+                DOVirtual.DelayedCall(1f, () => EndChat());
                 return;
             }
-            
-            var messageData = _messageLinesQueue.Dequeue();
+
+            MessageChatData messageData = _messageLinesQueue.Dequeue();
             
             if (messageData.Sender == MessageChatSenderType.Player)
             {
@@ -77,6 +81,9 @@ namespace Game.Domains.MessageChat
         {
             _messageLinesQueue.Clear();
             _messageChatViewUI.OnEndChat();
+
+            _onChatEnd?.Invoke();
+            _onChatEnd = null;
         }
     }
 }

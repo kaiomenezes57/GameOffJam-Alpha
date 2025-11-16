@@ -99,6 +99,7 @@ namespace Game.Domains.Smartphone
         public void SetCanPutDownPhone()
         {
             _canPutDownPhone = true;
+            TryPutDownPhone();
         }
     }
 }

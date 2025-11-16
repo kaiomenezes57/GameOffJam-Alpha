@@ -22,8 +22,7 @@ namespace Game.Domains.Telephone
         public override bool CanInteract()
         {
             return base.CanInteract() &&
-                !_currentDialogueData.Equals(default(DialogueData)) &&
-                _currentDialogueData.IsValid();
+                !_currentDialogueData.Equals(default(DialogueData));
         }
 
         public void Ring(DialogueData dialogueData)

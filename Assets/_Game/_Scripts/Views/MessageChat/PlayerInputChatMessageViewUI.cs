@@ -54,8 +54,12 @@ namespace Game.Views.MessageChat
 
         private void OnTypingPerformed(InputAction.CallbackContext ctx)
         {
-            _playerMessage.maxVisibleCharacters++;
             _instructionMessage.Hide();
+#if DEBUG
+            _playerMessage.maxVisibleCharacters += _playerMessage.text.Length;
+#else
+            _playerMessage.maxVisibleCharacters++;
+#endif
 
             if (_playerMessage.maxVisibleCharacters >= _playerMessage.text.Length)
             {

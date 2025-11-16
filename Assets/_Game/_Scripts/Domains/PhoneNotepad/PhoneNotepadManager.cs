@@ -12,6 +12,8 @@ namespace Game.Domains.PhoneNotepad
 
         public void SetTasks(params PhoneNotepadTaskData[] notepadTask)
         {
+            _currentTasks.Clear();
+
             foreach (var task in notepadTask)
             {
                 if (task.IsValid() && !_currentTasks.Contains(task))

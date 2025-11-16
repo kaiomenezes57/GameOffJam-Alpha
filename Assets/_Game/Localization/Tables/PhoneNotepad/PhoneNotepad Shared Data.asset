@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: task_turn_on_equip
     m_Metadata:
       m_Items: []
+  - m_Id: 3319831546134528
+    m_Key: go_feed_the_fish
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -14,6 +14,21 @@
             "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-1613520141277524236-1102987379",
             "source": "builtin",
             "value": "d_color_picker"
+        },
+        {
+            "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-1176906898-0",
+            "source": "builtin",
+            "value": "d_BuildSettings.WebGL"
+        },
+        {
+            "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-1364217631-0",
+            "source": "builtin",
+            "value": "d_LightProbeGroup Icon"
+        },
+        {
+            "globalId": "GlobalObjectId_V1-2-1645860b3a8812044ad18a3cbf29d57a-1083498873-0",
+            "source": "builtin",
+            "value": "d_LightProbeGroup Icon"
         }
     ]
 }

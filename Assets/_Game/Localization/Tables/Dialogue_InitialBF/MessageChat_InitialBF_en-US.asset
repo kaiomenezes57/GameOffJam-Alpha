@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MessageChat_InitialBF_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 2549723ea0ba92941b34ae2facc87948, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 305089839104
+    m_Localized: "[1] <2> T\xE1 a\xED amor? Como t\xE3o as coisas por a\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 404570341376
+    m_Localized: '[0] <0> por enquanto tudo certo eu acho'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 493263093760
+    m_Localized: '[1] <2> Ufa, ainda bem
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 553371664384
+    m_Localized: '[1] <2> Eu acabei achando o meu chinelo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 588691898368
+    m_Localized: '[1] <2> Adivinha aonde?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647282130944
+    m_Localized: "[0] <0> debaixo da pia de novo? n\xE3o duvido nada se for..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 704551157760
+    m_Localized: "[1] <2> Tava no meu p\xE9 quase que literalmente, t\xF4 ficando
+      velho mesmo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 764533899264
+    m_Localized: "[1] <2> Tava debaixo da minha mesa do escrit\xF3rio kkkkkkkkk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 795882127360
+    m_Localized: "[1] <2> Como n\xE3o vi isso?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908478218240
+    m_Localized: "[0] <0> meu, n\xE3o \xE9 poss\xEDvel, essas coisas s\xF3 acontecem
+      com voc\xEA mesmo kkkk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997623955456
+    m_Localized: '[1] <2> Meu bem
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1028967989248
+    m_Localized: "[1] <2> Eu comprei um presente pra voc\xEA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1053538222080
+    m_Localized: "[1] <2> Voc\xEA j\xE1 deve imaginar o que \xE9... t\xF4 muito ansioso
+      pra te dar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1169359732736
+    m_Localized: "[0] <0> ah n\xE3o "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1253363253248
+    m_Localized: "[0] <0> n\xE3o me deixa ansiosa assim, voc\xEA sabe que fico toda
+      agitada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1306857406464
+    m_Localized: "[1] <2> \xC9 pra mostrar um pedacinho do amor que sinto por voc\xEA\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1347433103360
+    m_Localized: "[1] <2> Mas n\xE3o fica ansiosa beb\xEA, se n\xE3o fico preocupado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1406736367616
+    m_Localized: "[0] <0> \xE9 por isso que gosto de voc\xEA amorzinho\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1462428336128
+    m_Localized: "[0] <0> vou voltar pro trabalho aqui, v\xEA se d\xE1 comida pro
+      Rex a\xED e n\xE3o esquece de jantar, hein"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1518850113536
+    m_Localized: "[0] <0> se n\xE3o fico toda preocupada aqui, t\xE1 bom?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1567717949440
+    m_Localized: "[1] <3> T\xE1 bom, meu bem, bom trabalho a\xED, t\xE1 bom? Liga
+      qualquer coisa, paro tudo pra te atender"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1652916846592
+    m_Localized: "[0] <0> t\xE1 bom, meu capit\xE3o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1708701089792
+    m_Localized: '[1] <2> Beijos lindinha'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

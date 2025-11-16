@@ -34,6 +34,10 @@ MonoBehaviour:
     m_Localized: Me mover no [WASD] e interagir no [E]?
     m_Metadata:
       m_Items: []
+  - m_Id: 3319831546134528
+    m_Localized: Alimentar o peixe.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
