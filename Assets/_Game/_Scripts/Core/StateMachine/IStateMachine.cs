@@ -1,10 +1,8 @@
-using System;
-
 namespace Game.Core.StateMachine
 {
-    public interface IStateMachine : IDisposable
+    public interface IStateMachine
     {
         IState Current { get; }
-        void Change(IState state);
+        void ChangeState(IState state);
     }
 }

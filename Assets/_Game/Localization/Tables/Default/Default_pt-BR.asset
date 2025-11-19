@@ -30,6 +30,10 @@ MonoBehaviour:
     m_Localized: "Moz\xE3o"
     m_Metadata:
       m_Items: []
+  - m_Id: 5803556150280192
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

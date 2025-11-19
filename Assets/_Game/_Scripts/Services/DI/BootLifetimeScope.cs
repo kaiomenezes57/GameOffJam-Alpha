@@ -1,15 +1,16 @@
-using Game.Domains.GameState;
+using Game.Application.GameState;
 using Game.Core.GameState;
 using VContainer.Unity;
 using VContainer;
 using Game.Core.Scene;
-using Game.Domains.Scene;
-using Game.Views.FadeTransition;
+using Game.Application.Scene;
+using Game.Unity.FadeTransition;
 using UnityEngine;
 using Game.Core.FadeTransition;
 using Sirenix.OdinInspector;
 using Game.Core.Scene.Data;
 using UnityEngine.SceneManagement;
+using Game.Unity.Debug;
 
 namespace Game.Services.DI
 {
@@ -26,6 +27,10 @@ namespace Game.Services.DI
             builder.RegisterComponentInNewPrefab(_fadeTransitionPrefab, Lifetime.Singleton)
                 .As<IFadeTransition>()
                 .AsSelf();
+
+#if DEBUG
+            builder.RegisterComponentInHierarchy<DebugInformation>();
+#endif
         }
 
         private void Start()

@@ -1,22 +1,24 @@
-using Game.Domains.Trigger;
-using VContainer.Unity;
-using VContainer;
+using Game.Application.Dialogue;
+using Game.Application.Fish;
+using Game.Application.MessageChat;
+using Game.Application.PhoneNotepad;
+using Game.Application.Trigger;
+using Game.Application.UINotification;
 using Game.Core.Dialogue;
-using Game.Domains.Dialogue;
-using Game.Services.Audio;
-using UnityEngine;
-using Game.Views.Debug;
-using Game.Core.MessageChat;
-using Game.Domains.MessageChat;
-using System.Collections.Generic;
-using Game.Core.UINotification;
-using Game.Domains.UINotification;
-using Game.Core.Smartphone;
-using Game.Core.PhoneNotepad;
-using Game.Domains.PhoneNotepad;
-using Game.Core.Telephone;
 using Game.Core.Extensions;
+using Game.Core.Fish;
 using Game.Core.Interaction;
+using Game.Core.MessageChat;
+using Game.Core.PhoneNotepad;
+using Game.Core.Showcase;
+using Game.Core.Smartphone;
+using Game.Core.Telephone;
+using Game.Core.UINotification;
+using Game.Services.Audio;
+using Game.Unity.Fish;
+using Game.Unity.Showcase;
+using VContainer;
+using VContainer.Unity;
 
 namespace Game.Services.DI
 {
@@ -27,7 +29,8 @@ namespace Game.Services.DI
             // Dialogue Services
             builder.Register<IDialogueAudioService, DialogueAudioService>(Lifetime.Singleton);
             builder.RegisterComponentInHierarchy<IDialogueViewUI>();
-            builder.Register<IDialogueManager, DialogueManager>(Lifetime.Singleton);
+            builder.Register<DialogueManager>(Lifetime.Singleton)
+                .AsImplementedInterfaces();
 
             // Message Chat Services
             builder.RegisterComponentInHierarchy<IPlayerInputChatMessageViewUI>();
@@ -37,6 +40,10 @@ namespace Game.Services.DI
             // UI Notification Services
             builder.RegisterComponentInHierarchy<IUINotificationView>();
             builder.Register<IUINotificationManager, UINotificationManager>(Lifetime.Singleton);
+
+            // Showcase Services
+            builder.RegisterComponentInHierarchy<ShowcaseText>()
+                .AsImplementedInterfaces();
 
             // Phone Services
             builder.RegisterComponentInHierarchy<IPhoneManager>();
@@ -49,11 +56,16 @@ namespace Game.Services.DI
             // Telephone Services
             builder.RegisterComponentInHierarchy<ITelephone>();
 
+            // Factory Services
+            builder.Register<IFishStateMachineFactory, FishStateMachineFactory>(Lifetime.Singleton);
+
             // GameObject registrations
             builder.RegisterGameObjectsOfType<BaseGameTrigger>(ref autoInjectGameObjects);
             builder.RegisterGameObjectsOfType<BaseInteractable>(ref autoInjectGameObjects);
+            builder.RegisterGameObjectsOfType<FishController>(ref autoInjectGameObjects);
+
 #if DEBUG
-            builder.RegisterComponentInHierarchy<DebugInformation>();
+            builder.RegisterGameObjectsOfType<Unity.Debug.DialogueCheats>(ref autoInjectGameObjects);
 #endif
         }
     }

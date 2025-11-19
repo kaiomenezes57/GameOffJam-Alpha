@@ -1,9 +1,7 @@
-using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Game.Core.Events;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Localization.Settings;
 
 namespace Game.Core.Interaction
 {
@@ -17,12 +15,12 @@ namespace Game.Core.Interaction
         private Collider _collider;
         private bool _isInCooldown;
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             EventBus.Subscribe<OnChangeGameState>(SwitchEnable);
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             EventBus.UnSubscribe<OnChangeGameState>(SwitchEnable);
         }

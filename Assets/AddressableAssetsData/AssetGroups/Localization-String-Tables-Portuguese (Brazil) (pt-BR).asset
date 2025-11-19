@@ -51,6 +51,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pt-BR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c054311f085d2b849b6313deb848a28e
+    m_Address: Posters_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c20b48b847030364785e0993d21a51d5
     m_Address: TVPrograms_pt-BR
     m_ReadOnly: 1

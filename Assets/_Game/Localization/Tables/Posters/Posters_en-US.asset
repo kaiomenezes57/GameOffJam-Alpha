@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Posters_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 9b5aa733b2c8de94e9565b6811ad78b8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 96293191680
+    m_Localized: "[Pr\xEAmio de: \n\nPrimeiro canal local a operar durante a pandemia
+      no ano de 2020]\n\nEste foi o primeiro canal local a operar durante a pandemia,
+      partindo do \xEDnicio de 2020 at\xE9 meados de 2022. \n\nTodos os funcionarios
+      do canal estavam prevenidos para a Covid e estavam trabalhando para manter
+      o p\xFAblico entretido e sempre com novidades na programa\xE7\xE3o. \n\nPr\xEAmio
+      dado pelo <b>ministerio da cultura da cidade</b>. \n\nFora a conscientiza\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400789946368
+    m_Localized: "[Pr\xEAmio de: \n\nMelhor inova\xE7\xE3o na \xE1rea do audiovisual:
+      comerciais ao vivo]\n\nCom o capitalismo crescendo, novas e novas propostas
+      inovadoras surgem. Algumas boas outras nem tanto. O canal 98 teve a maestria
+      de apresentar um sistema de comerciais narrados ao vivo por locutores contratados
+      pela emissora.\n\nQuem gosta de streaming da internet, gosta. Quem n\xE3o gosta,
+      se entretem no dinamismo do canal 98!\n\nPr\xEAmio dado pela <b>Univerdade
+      Particular Professor Afonso Alencar de Freitas</b>.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10753726054400
+    m_Localized: "[Filme Autoral do Canal:\n\"Em Busca de Territ\xF3rio\"]\n\n<b>Sinopse</b>\n\nEm
+      uma cidade interiorana que parece parada no tempo, uma jovem pesquisadora de
+      folclore, Lara Monteiro, retorna para investigar uma sequ\xEAncia de desaparecimentos
+      ligados a um mito antigo conhecido apenas como O Errante \u2014 uma entidade
+      que vagaria pelas fronteiras do \u201Cterrit\xF3rio humano\u201D, punindo aqueles
+      que se aventuram onde n\xE3o deveriam.\n\nAo chegar, Lara percebe que a cidade
+      inteira esconde algo \u2014 portas fecham ao seu passar, moradores evitam falar
+      sobre o passado e, principalmente, sobre a floresta ao norte. Mas quando uma
+      transmiss\xE3o perdida dos arquivos do Channel 98 revela que seu pr\xF3prio
+      pai foi uma das \xFAltimas pessoas vistas antes de sumir na floresta, ela decide
+      continuar a investiga\xE7\xE3o por conta pr\xF3pria.\n\nConforme Lara se aprofunda
+      nos mist\xE9rios, o territ\xF3rio \u201Cproibido\u201D come\xE7a a se expandir\u2026
+      e ela descobre que o medo n\xE3o est\xE1 mais l\xE1 fora \u2014 ele est\xE1
+      vindo at\xE9 ela."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

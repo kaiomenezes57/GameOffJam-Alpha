@@ -1,7 +1,7 @@
 using Game.Core.Dialogue;
 using Game.Core.Extensions;
-using Game.Domains.Dialogue;
-using Game.Domains.Trigger;
+using Game.Application.Dialogue;
+using Game.Application.Trigger;
 using Game.Services.Audio;
 using VContainer;
 using VContainer.Unity;

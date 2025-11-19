@@ -1,5 +1,5 @@
 using Game.Core.Extensions;
-using Game.Views.SplashArt;
+using Game.Unity.SplashArt;
 using VContainer;
 using VContainer.Unity;
 

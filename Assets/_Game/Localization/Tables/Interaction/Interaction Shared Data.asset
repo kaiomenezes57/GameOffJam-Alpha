@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: telephone
     m_Metadata:
       m_Items: []
+  - m_Id: 1880697954729984
+    m_Key: feed_minigame
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
