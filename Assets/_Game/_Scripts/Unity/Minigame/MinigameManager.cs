@@ -19,17 +19,12 @@ namespace Game.Unity.Minigame
         private int _currentProgress;
         private bool _completed;
 
-        private void Start()
-        {
-            _minigameCamera.gameObject.SetActive(false);
-        }
-
         private bool TryStartMinigame()
         {
             if (!_gameStateHandler.TryChange(new Minigame_GameState(), this))
                 return false;
 
-            _minigameCamera.gameObject.SetActive(true);
+            _minigameCamera.enabled = true;
             _onStartMinigame?.Invoke();
             return true;
         }
@@ -44,7 +39,7 @@ namespace Game.Unity.Minigame
         private void EndMinigame()
         {
             _gameStateHandler.BackToPrevious(this);
-            _minigameCamera.gameObject.SetActive(false);
+            _minigameCamera.enabled = false;
             _onEndMinigame?.Invoke();
 
             _completed = true;

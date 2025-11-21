@@ -436,15 +436,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Game.Domains.Trigger::Game.Domains.Trigger.OnEnable_GameTrigger
   _actions:
-  - rid: 7194533657627590656
+  - rid: 7194533842136858625
   references:
     version: 2
     RefIds:
-    - rid: 7194533657627590656
-      type: {class: ChangeScene_TriggerAction, ns: Game.Domains.Scene, asm: Game.Domains.Scene}
+    - rid: 7194533842136858625
+      type: {class: ChangeScene_TriggerAction, ns: Game.Application.Scene, asm: Game.Domains.Scene}
       data:
         _triggerOnce: 1
-        _delay: 2
+        _delay: 3
         _onStartTriggering:
           m_PersistentCalls:
             m_Calls: []
@@ -1174,15 +1174,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Game.Domains.Trigger::Game.Domains.Trigger.OnEnable_GameTrigger
   _actions:
-  - rid: 7194533657535578206
+  - rid: 7194533842136858624
   references:
     version: 2
     RefIds:
-    - rid: 7194533657535578206
-      type: {class: StartDialogue_TriggerAction, ns: Game.Domains.Dialogue, asm: Game.Domains.Dialogue}
+    - rid: 7194533842136858624
+      type: {class: StartDialogue_TriggerAction, ns: Game.Application.Dialogue, asm: Game.Domains.Dialogue}
       data:
         _triggerOnce: 1
-        _delay: 5
+        _delay: 3
         _onStartTriggering:
           m_PersistentCalls:
             m_Calls: []
@@ -1190,7 +1190,7 @@ MonoBehaviour:
           m_PersistentCalls:
             m_Calls: []
         _dialogueData:
-          <DialogueTable>k__BackingField: {fileID: 11400000, guid: c472adaae2b09fc459030db2b40c7436, type: 2}
+          <DialogueTable>k__BackingField: {fileID: 11400000, guid: cc1a5b348cdbda542bff803532df3a64, type: 2}
           <Audio>k__BackingField:
             Guid:
               Data1: 1527385293

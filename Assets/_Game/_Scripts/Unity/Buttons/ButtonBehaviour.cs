@@ -4,6 +4,7 @@ using Sirenix.Serialization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using VContainer;
 
 namespace Game.Unity.Buttons
 {
@@ -12,6 +13,8 @@ namespace Game.Unity.Buttons
         [OdinSerialize, SerializeReference] private IButtonAction[] _actions;
         [SerializeField, MinValue(0f)] private float _clickCooldown = 1f;
         [SerializeField] private Button _button;
+
+        [Inject] private readonly IObjectResolver _objectResolver;
         private bool _isInCooldown;
 
         private void OnEnable()
@@ -24,6 +27,12 @@ namespace Game.Unity.Buttons
         {
             foreach (var action in _actions)
                 _button.onClick.RemoveListener(OnClick);
+        }
+
+        private void Start()
+        {
+            foreach (var action in _actions)
+                action.Inject(_objectResolver);
         }
 
         private void OnClick()

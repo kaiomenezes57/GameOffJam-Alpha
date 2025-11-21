@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Game.Unity.Buttons
 {
-    public sealed class CloseShowcaseScreen : IButtonAction
+    public sealed class CloseShowcaseScreen : BaseButtonAction
     {
         [SerializeField] private ShowcaseText _showcaseText;
 
-        public void OnClick()
+        public override void OnClick()
         {
             _showcaseText.Hide();
         }
